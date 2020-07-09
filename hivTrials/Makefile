@@ -167,87 +167,89 @@ FastRoot:
 	cd hiv8/PhyML && FastRoot.py -i MAFFT.phy_phyml_tree.txt -m MP -o MidPointRooted.tre
 	cd hiv9/PhyML && FastRoot.py -i MAFFT.phy_phyml_tree.txt -m MP -o MidPointRooted.tre
 
-msa:
+metrics: msa inference rooting
+
+msa:	
+	@mkdir msadists
 	@./../helperScripts/fixFastaSpacing.py -i hiv1/MAFFT/MAFFT.aln
-	@cat hiv1/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv1/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv1_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv1/trueData/hivTrueMSA.phy -o hiv1/trueData/hivTrueMSA.fasta
-	@cat hiv1/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv1/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv1_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv2/MAFFT/MAFFT.aln
-	@cat hiv2/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv2/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv2_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv2/trueData/hivTrueMSA.phy -o hiv2/trueData/hivTrueMSA.fasta
-	@cat hiv2/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv2/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv2_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv3/MAFFT/MAFFT.aln
-	@cat hiv3/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv3/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv3_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv3/trueData/hivTrueMSA.phy -o hiv3/trueData/hivTrueMSA.fasta
-	@cat hiv3/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv3/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv3_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv4/MAFFT/MAFFT.aln
-	@cat hiv4/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv4/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv4_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv4/trueData/hivTrueMSA.phy -o hiv4/trueData/hivTrueMSA.fasta
-	@cat hiv4/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv4/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv4_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv5/MAFFT/MAFFT.aln
-	@cat hiv5/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv5/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv5_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv5/trueData/hivTrueMSA.phy -o hiv5/trueData/hivTrueMSA.fasta
-	@cat hiv5/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv5/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv5_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv6/MAFFT/MAFFT.aln
-	@cat hiv6/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv6/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv6_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv6/trueData/hivTrueMSA.phy -o hiv6/trueData/hivTrueMSA.fasta
-	@cat hiv6/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv6/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv6_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv7/MAFFT/MAFFT.aln
-	@cat hiv7/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv7/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv7_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv7/trueData/hivTrueMSA.phy -o hiv7/trueData/hivTrueMSA.fasta
-	@cat hiv7/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv7/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv7_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv8/MAFFT/MAFFT.aln
-	@cat hiv8/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv8/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv8_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv8/trueData/hivTrueMSA.phy -o hiv8/trueData/hivTrueMSA.fasta
-	@cat hiv8/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv8/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv8_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i hiv9/MAFFT/MAFFT.aln
-	@cat hiv9/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o MAFFTdists > /dev/null 2>&1
+	@cat hiv9/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/hiv9_MAFFT > /dev/null 2>&1
 	@../helperScripts/phy2fasta.py -i hiv9/trueData/hivTrueMSA.phy -o hiv9/trueData/hivTrueMSA.fasta
-	@cat hiv9/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o trueDists > /dev/null 2>&1
-	@./../helperScripts/errorSq.py -d1 MAFFTdists -d2 trueDists 
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c spearman
-	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
-	@rm trueDists MAFFTdists
+	@cat hiv9/trueData/hivTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/hiv9_true > /dev/null 2>&1
+	
+	@echo "MAFFT ErrorSq"
+	@./../helperScripts/errorSq.py -d1 msadists/hiv1_MAFFT -d2 msadists/hiv1_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv2_MAFFT -d2 msadists/hiv2_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv3_MAFFT -d2 msadists/hiv3_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv4_MAFFT -d2 msadists/hiv4_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv5_MAFFT -d2 msadists/hiv5_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv6_MAFFT -d2 msadists/hiv6_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv7_MAFFT -d2 msadists/hiv7_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv8_MAFFT -d2 msadists/hiv8_true
+	@./../helperScripts/errorSq.py -d1 msadists/hiv9_MAFFT -d2 msadists/hiv9_true
+	
+	@echo "MAFFT Mantel (Spearman)"
+	@./../helperScripts/mantel.py -d1 msadists/hiv1_MAFFT -d2 msadists/hiv1_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv2_MAFFT -d2 msadists/hiv2_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv3_MAFFT -d2 msadists/hiv3_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv4_MAFFT -d2 msadists/hiv4_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv5_MAFFT -d2 msadists/hiv5_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv6_MAFFT -d2 msadists/hiv6_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv7_MAFFT -d2 msadists/hiv7_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv8_MAFFT -d2 msadists/hiv8_true -c spearman
+	@./../helperScripts/mantel.py -d1 msadists/hiv9_MAFFT -d2 msadists/hiv9_true -c spearman
+	
+	@echo "MAFFT Mantel (Pearson)"
+	@./../helperScripts/mantel.py -d1 msadists/hiv1_MAFFT -d2 msadists/hiv1_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv2_MAFFT -d2 msadists/hiv2_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv3_MAFFT -d2 msadists/hiv3_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv4_MAFFT -d2 msadists/hiv4_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv5_MAFFT -d2 msadists/hiv5_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv6_MAFFT -d2 msadists/hiv6_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv7_MAFFT -d2 msadists/hiv7_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv8_MAFFT -d2 msadists/hiv8_true -c pearson
+	@./../helperScripts/mantel.py -d1 msadists/hiv9_MAFFT -d2 msadists/hiv9_true -c pearson
+	
+	@rm -rf msadists
 
 inference:
 	@echo "FastTree URF"
