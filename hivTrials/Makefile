@@ -249,6 +249,349 @@ msa:
 	@./../helperScripts/mantel.py -d1 MAFFTdists -d2 trueDists -c pearson
 	@rm trueDists MAFFTdists
 
+inference:
+	@echo "FastTree URF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/FastTree/fast.tre -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/FastTree/fast.tre -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/FastTree/fast.tre -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/FastTree/fast.tre -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/FastTree/fast.tre -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/FastTree/fast.tre -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/FastTree/fast.tre -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/FastTree/fast.tre -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/FastTree/fast.tre -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric URF --normalize 
+	
+	@echo "IQTree URF" 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric URF --normalize 
+	
+	@echo "IQTreeMFP URF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric URF --normalize 
+	
+	@echo "RAxML URF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric URF --normalize 
+	
+	@echo "PhyML URF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric URF --normalize 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric URF --normalize 
+	
+	@echo "FastTree WRF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/FastTree/fast.tre -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/FastTree/fast.tre -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/FastTree/fast.tre -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/FastTree/fast.tre -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/FastTree/fast.tre -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/FastTree/fast.tre -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/FastTree/fast.tre -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/FastTree/fast.tre -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/FastTree/fast.tre -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric WRF 
+	
+	@echo "IQTree WRF"	
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/IQTree/MAFFT.aln.treefile -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric WRF 
+	
+	@echo "IQTreeMFP WRF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/IQTreeMFP/MAFFT.aln.treefile -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric WRF 
+	
+	@echo "RAxML WRF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/RAxML/MAFFT.aln.raxml.bestTree -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric WRF 
+	
+	@echo "PhyML WRF"
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv1/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv1/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv2/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv2/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv3/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv3/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv4/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv4/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv5/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv5/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv6/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv6/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv7/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv7/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv8/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv8/trueData/hivTrueTree.tre --metric WRF 
+	@cd ../helperScripts && python3 nw_error.py -t1 ../hivTrials/hiv9/PhyML/MAFFT.phy_phyml_tree.txt -t2 ../hivTrials/hiv9/trueData/hivTrueTree.tre --metric WRF 
+	
+	@mkdir patristic_distances
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv1/FastTree/fast.tre -o hiv1_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv1/IQTree/MAFFT.aln.treefile -o hiv1_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv1/IQTreeMFP/MAFFT.aln.treefile -o hiv1_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv1/RAxML/MAFFT.aln.raxml.bestTree -o hiv1_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv1/PhyML/MAFFT.phy_phyml_tree.txt -o hiv1_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv1/trueData/hivTrueTree.tre -o hiv1_true
+		
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv2/FastTree/fast.tre -o hiv2_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv2/IQTree/MAFFT.aln.treefile -o hiv2_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv2/IQTreeMFP/MAFFT.aln.treefile -o hiv2_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv2/RAxML/MAFFT.aln.raxml.bestTree -o hiv2_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv2/PhyML/MAFFT.phy_phyml_tree.txt -o hiv2_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv2/trueData/hivTrueTree.tre -o hiv2_true
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv3/FastTree/fast.tre -o hiv3_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv3/IQTree/MAFFT.aln.treefile -o hiv3_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv3/IQTreeMFP/MAFFT.aln.treefile -o hiv3_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv3/RAxML/MAFFT.aln.raxml.bestTree -o hiv3_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv3/PhyML/MAFFT.phy_phyml_tree.txt -o hiv3_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv3/trueData/hivTrueTree.tre -o hiv3_true
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv4/FastTree/fast.tre -o hiv4_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv4/IQTree/MAFFT.aln.treefile -o hiv4_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv4/IQTreeMFP/MAFFT.aln.treefile -o hiv4_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv4/RAxML/MAFFT.aln.raxml.bestTree -o hiv4_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv4/PhyML/MAFFT.phy_phyml_tree.txt -o hiv4_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv4/trueData/hivTrueTree.tre -o hiv4_true
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv5/FastTree/fast.tre -o hiv5_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv5/IQTree/MAFFT.aln.treefile -o hiv5_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv5/IQTreeMFP/MAFFT.aln.treefile -o hiv5_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv5/RAxML/MAFFT.aln.raxml.bestTree -o hiv5_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv5/PhyML/MAFFT.phy_phyml_tree.txt -o hiv5_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv5/trueData/hivTrueTree.tre -o hiv5_true
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv6/FastTree/fast.tre -o hiv6_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv6/IQTree/MAFFT.aln.treefile -o hiv6_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv6/IQTreeMFP/MAFFT.aln.treefile -o hiv6_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv6/RAxML/MAFFT.aln.raxml.bestTree -o hiv6_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv6/PhyML/MAFFT.phy_phyml_tree.txt -o hiv6_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv6/trueData/hivTrueTree.tre -o hiv6_true
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv7/FastTree/fast.tre -o hiv7_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv7/IQTree/MAFFT.aln.treefile -o hiv7_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv7/IQTreeMFP/MAFFT.aln.treefile -o hiv7_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv7/RAxML/MAFFT.aln.raxml.bestTree -o hiv7_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv7/PhyML/MAFFT.phy_phyml_tree.txt -o hiv7_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv7/trueData/hivTrueTree.tre -o hiv7_true
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv8/FastTree/fast.tre -o hiv8_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv8/IQTree/MAFFT.aln.treefile -o hiv8_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv8/IQTreeMFP/MAFFT.aln.treefile -o hiv8_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv8/RAxML/MAFFT.aln.raxml.bestTree -o hiv8_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv8/PhyML/MAFFT.phy_phyml_tree.txt -o hiv8_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv8/trueData/hivTrueTree.tre -o hiv8_true
+	
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv9/FastTree/fast.tre -o hiv9_FastTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv9/IQTree/MAFFT.aln.treefile -o hiv9_IQTree
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv9/IQTreeMFP/MAFFT.aln.treefile -o hiv9_IQTreeMFP
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv9/RAxML/MAFFT.aln.raxml.bestTree -o hiv9_RAxML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv9/PhyML/MAFFT.phy_phyml_tree.txt -o hiv9_PhyML
+	@cd patristic_distances && ./../../helperScripts/patristic_distances.py -i ../hiv9/trueData/hivTrueTree.tre -o hiv9_true
+	
+	@echo "FastTree Mantel (Spearman)"
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_FastTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_FastTree --correlation spearman 
+	
+	@echo "IQTree Mantel (Spearman)"
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_IQTree --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_IQTree --correlation spearman 
+	
+	@echo "IQTreeMFP Mantel (Spearman)"
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_IQTreeMFP --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_IQTreeMFP --correlation spearman 
+	
+	@echo "PhyML Mantel (Spearman)"
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_PhyML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_PhyML --correlation spearman 
+	
+	@echo "RAxML Mantel (Spearman)"
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_RAxML --correlation spearman 
+	@./../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_RAxML --correlation spearman 
+	
+	@echo "FastTree Mantel (Pearson)"
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_FastTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_FastTree --correlation pearson 
+	
+	@echo "IQTree Mantel (Pearson)"
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_IQTree --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_IQTree --correlation pearson 
+	
+	@echo "IQTreeMFP Mantel (Pearson)"
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_IQTreeMFP --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_IQTreeMFP --correlation pearson 
+	
+	@echo "PhyML Mantel (Pearson)"
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_PhyML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_PhyML --correlation pearson 
+	
+	@echo "RAxML Mantel (Pearson)"
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_RAxML --correlation pearson 
+	@../helperScripts/mantel.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_RAxML --correlation pearson 
+	
+	@echo "FastTree ErrorSq"
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_FastTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_FastTree 
+	
+	@echo "IQTREE ErrorSq"
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_IQTree 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_IQTree 
+	
+	@echo "IQTreeMFP ErrorSq"
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_IQTreeMFP 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_IQTreeMFP 
+	
+	@echo "RAxML ErrorSq"
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_RAxML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_RAxML 
+	
+	@echo "PhyML ErrorSq"
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv1_true -d2 patristic_distances/hiv1_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv2_true -d2 patristic_distances/hiv2_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv3_true -d2 patristic_distances/hiv3_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv4_true -d2 patristic_distances/hiv4_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv5_true -d2 patristic_distances/hiv5_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv6_true -d2 patristic_distances/hiv6_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv7_true -d2 patristic_distances/hiv7_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv8_true -d2 patristic_distances/hiv8_PhyML 
+	@../helperScripts/errorSq.py -d1 patristic_distances/hiv9_true -d2 patristic_distances/hiv9_PhyML 
+	
+	@rm -rf patristic_distances
+		
 rooting:
 	@echo "FastTree MinVar"
 	@./../helperScripts/delta_triplet_dist hiv1/trueData/hivTrueTree.tre hiv1/FastTree/MinVarRooted.tre

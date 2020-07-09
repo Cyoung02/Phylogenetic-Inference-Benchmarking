@@ -59,5 +59,6 @@ for id_1 in sorted(dict_1.keys()):
 
 # calculate mantel correlation
 coeff, p_value, n = mantel(array_1, array_2, method=args.correlation, permutations=0)
-print("Mantel Correlation Statistic (", args.correlation, "):", coeff)
+#print("Mantel Correlation Statistic (", args.correlation, "):", coeff)
 #print("p-Value: %f" % p_value)
+print(coeff)

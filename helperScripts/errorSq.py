@@ -35,4 +35,5 @@ for id_1 in dict_1:
         error += math.pow(float(dict_1[id_1][id_2]) - float(dict_2[id_1][id_2]), 2)
 
 error = error/(2*comb(len(dict_1), 2))
-print("Mean Error Squared: ", error)
+#print("Mean Error Squared: ", error)
+print(error)
