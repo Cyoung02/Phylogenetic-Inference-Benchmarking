@@ -189,52 +189,52 @@ msa:
 	@mkdir msadists
 	@./../helperScripts/fixFastaSpacing.py -i ebola0/MAFFT/MAFFT.aln
 	@cat ebola0/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola0_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola0/trueData/ebolaTrueMSA.phy -o ebola0/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola0/trueData/ebolaTrueMSA.phy -o ebola0/trueData/ebolaTrueMSA.fasta
 	@cat ebola0/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola0_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola1/MAFFT/MAFFT.aln
 	@cat ebola1/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola1_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola1/trueData/ebolaTrueMSA.phy -o ebola1/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola1/trueData/ebolaTrueMSA.phy -o ebola1/trueData/ebolaTrueMSA.fasta
 	@cat ebola1/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola1_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola2/MAFFT/MAFFT.aln
 	@cat ebola2/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola2_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola2/trueData/ebolaTrueMSA.phy -o ebola2/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola2/trueData/ebolaTrueMSA.phy -o ebola2/trueData/ebolaTrueMSA.fasta
 	@cat ebola2/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola2_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola3/MAFFT/MAFFT.aln
 	@cat ebola3/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola3_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola3/trueData/ebolaTrueMSA.phy -o ebola3/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola3/trueData/ebolaTrueMSA.phy -o ebola3/trueData/ebolaTrueMSA.fasta
 	@cat ebola3/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola3_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola4/MAFFT/MAFFT.aln
 	@cat ebola4/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola4_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola4/trueData/ebolaTrueMSA.phy -o ebola4/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola4/trueData/ebolaTrueMSA.phy -o ebola4/trueData/ebolaTrueMSA.fasta
 	@cat ebola4/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola4_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola5/MAFFT/MAFFT.aln
 	@cat ebola5/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola5_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola5/trueData/ebolaTrueMSA.phy -o ebola5/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola5/trueData/ebolaTrueMSA.phy -o ebola5/trueData/ebolaTrueMSA.fasta
 	@cat ebola5/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola5_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola6/MAFFT/MAFFT.aln
 	@cat ebola6/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola6_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola6/trueData/ebolaTrueMSA.phy -o ebola6/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola6/trueData/ebolaTrueMSA.phy -o ebola6/trueData/ebolaTrueMSA.fasta
 	@cat ebola6/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola6_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola7/MAFFT/MAFFT.aln
 	@cat ebola7/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola7_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola7/trueData/ebolaTrueMSA.phy -o ebola7/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola7/trueData/ebolaTrueMSA.phy -o ebola7/trueData/ebolaTrueMSA.fasta
 	@cat ebola7/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola7_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola8/MAFFT/MAFFT.aln
 	@cat ebola8/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola8_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola8/trueData/ebolaTrueMSA.phy -o ebola8/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola8/trueData/ebolaTrueMSA.phy -o ebola8/trueData/ebolaTrueMSA.fasta
 	@cat ebola8/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola8_true > /dev/null 2>&1
 	
 	@./../helperScripts/fixFastaSpacing.py -i ebola9/MAFFT/MAFFT.aln
 	@cat ebola9/MAFFT/MAFFT.aln | tn93 -t 1 -l 1 -q -o msadists/ebola9_MAFFT > /dev/null 2>&1
-	#@../helperScripts/phy2fasta.py -i ebola9/trueData/ebolaTrueMSA.phy -o ebola9/trueData/ebolaTrueMSA.fasta
+	@../helperScripts/phy2fasta.py -i ebola9/trueData/ebolaTrueMSA.phy -o ebola9/trueData/ebolaTrueMSA.fasta
 	@cat ebola9/trueData/ebolaTrueMSA.fasta | tn93 -t 1 -l 1 -q -o msadists/ebola9_true > /dev/null 2>&1
 	
 	@echo "MAFFT ErrorSq"
