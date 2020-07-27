@@ -1,0 +1,109 @@
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 26-Jul-2020 22:14:49 as follows:
+
+raxml-ng --msa ebolaTrueMSA.fasta --model GTR+I+G
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 1595826889
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (4 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: ebolaTrueMSA.fasta
+[00:00:00] Loaded alignment with 100 taxa and 20231 sites
+
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055 and EBOV_H.sap-wt_SLE_14_Makona-G3677.2_KM034557 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171 and EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4971_1_KR105284 and EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4937_1_KR105278 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707 and EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-G3735.2_KM233057 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-EM124.3_KM233047 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-G3840_KM233106 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-G3818_KM233092 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-NM042.1_KM233116 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-G3825.1_KM233098 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757 and EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754 are exactly identical!
+WARNING: Duplicate sequences found: 12
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /home/colin/Desktop/NiemaLab/evaluationAnalysis/ebolaTrials/ebola7/RAxML/ebolaTrueMSA.fasta.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 3283 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 20231 / 3283
+Gaps: 3.48 %
+Invariant sites: 36.55 %
+
+
+NOTE: Binary MSA file created: ebolaTrueMSA.fasta.raxml.rba
+
+[00:00:00] Generating 10 random starting tree(s) with 100 taxa
+[00:00:00] Generating 10 parsimony starting tree(s) with 100 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 821 / 13136
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:00 -421953.244854] Initial branch length optimization
+[00:00:00 -189669.152883] Model parameter optimization (eps = 10.000000)
+[00:00:05 -175620.474172] AUTODETECT spr round 1 (radius: 5)
+[00:00:06 -159954.167524] AUTODETECT spr round 2 (radius: 10)
+[00:00:08 -126131.214884] AUTODETECT spr round 3 (radius: 15)
+[00:00:09 -125978.935245] AUTODETECT spr round 4 (radius: 20)
+[00:00:11 -125406.682025] AUTODETECT spr round 5 (radius: 25)
+[00:00:12 -125406.674494] SPR radius for FAST iterations: 20 (autodetect)
+[00:00:12 -125406.674494] Model parameter optimization (eps = 3.000000)
+[00:00:15 -124981.196796] FAST spr round 1 (radius: 20)
+[00:00:18 -120541.989739] FAST spr round 2 (radius: 20)
+[00:00:21 -119515.170330] FAST spr round 3 (radius: 20)
+[00:00:24 -119515.159287] Model parameter optimization (eps = 1.000000)
+[00:00:29 -118857.097143] SLOW spr round 1 (radius: 5)
+[00:00:33 -118854.386562] SLOW spr round 2 (radius: 5)
+[00:00:37 -118854.385358] SLOW spr round 3 (radius: 10)
+[00:00:43 -118854.384775] SLOW spr round 4 (radius: 15)
+[00:00:54 -118854.384489] SLOW spr round 5 (radius: 20)
+[00:01:04 -118854.384349] SLOW spr round 6 (radius: 25)
+[00:01:07 -118854.384280] Model parameter optimization (eps = 0.100000)
+
+[00:01:08] ML tree search #1, logLikelihood: -118853.106499
+
+[00:01:08 -416409.491365] Initial branch length optimization
+[00:01:08 -193929.580368] Model parameter optimization (eps = 10.000000)
+[00:01:13 -180161.321045] AUTODETECT spr round 1 (radius: 5)
+[00:01:14 -174816.829386] AUTODETECT spr round 2 (radius: 10)
+[00:01:15 -154227.589111] AUTODETECT spr round 3 (radius: 15)
+[00:01:17 -147291.935221] AUTODETECT spr round 4 (radius: 20)
+[00:01:18 -147291.839983] SPR radius for FAST iterations: 15 (autodetect)
+[00:01:18 -147291.839983] Model parameter optimization (eps = 3.000000)
+[00:01:20 -133620.750685] FAST spr round 1 (radius: 15)
+[00:01:22 -130350.458833] FAST spr round 2 (radius: 15)
+[00:01:25 -130109.339269] FAST spr round 3 (radius: 15)
+[00:01:28 -130109.323298] Model parameter optimization (eps = 1.000000)
+[00:01:28 -130104.931881] SLOW spr round 1 (radius: 5)
+[00:01:32 -121425.709279] SLOW spr round 2 (radius: 5)
+[00:01:36 -121425.708031] SLOW spr round 3 (radius: 10)
+[00:01:41 -121425.708031] SLOW spr round 4 (radius: 15)
+[00:01:52 -121425.700503] SLOW spr round 5 (radius: 20)
+[00:01:59 -121425.484313] SLOW spr round 6 (radius: 5)
+[00:02:04 -121425.255089] SLOW spr round 7 (radius: 5)
+[00:02:09 -121425.255089] SLOW spr round 8 (radius: 10)
+[00:02:16 -121425.255089] SLOW spr round 9 (radius: 15)
+[00:02:24 -121425.255089] SLOW spr round 10 (radius: 20)
+[00:02:30 -121425.255089] SLOW spr round 11 (radius: 25)
+[00:02:34 -121425.255089] Model parameter optimization (eps = 0.100000)
