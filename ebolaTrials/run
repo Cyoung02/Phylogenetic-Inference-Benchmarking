@@ -11,7 +11,7 @@ do
 
     cd ../IQTreeMFP
     cp ../trueData/ebolaTrueMSA.fasta .
-    iqtree -m MFT -s MAFFT.aln -nt AUTO
+    iqtree -m MFT -s ebolaTrueMSA.fasta -nt AUTO
 
     cd ../RAxML
     cp ../trueData/ebolaTrueMSA.fasta .
