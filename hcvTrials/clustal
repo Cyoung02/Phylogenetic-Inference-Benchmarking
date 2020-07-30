@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+for ((i=0; i < 10; i++))
+do
+    cd hcv$i
+    mkdir ClustalOmega
+    cd ClustalOmega
+    mkdir FastTree IQTree IQTreeMFP PhyML RAxML
+    clustalo -v --auto -i ../hcvSeqs.fas -o Clustal.aln
+    
+    cd FastTree
+    cat ../Clustal.aln | FastTree -gamma -nt -gtr -out fast.tre
+
+    cd ../IQTree
+    cp ../Clustal.aln .
+    iqtree -m GTR+I+R -s Clustal.aln -nt AUTO
+
+    cd ../IQTreeMFP
+    cp ../Clustal.aln .
+    iqtree -m MFT -s Clustal.aln -nt AUTO
+
+    cd ../RAxML
+    cp ../Clustal.aln .
+    raxml-ng --msa Clustal.aln --model GTR+I+G
+
+    cd ../PhyML
+    ../../../../helperScripts/fasta2phylip.py -i ../Clustal.aln -o ./Clustal.phy
+    phyml -i Clustal.phy -a e -d nt -m GTR --no_memory_check
+
+    cd ../../../
+done
