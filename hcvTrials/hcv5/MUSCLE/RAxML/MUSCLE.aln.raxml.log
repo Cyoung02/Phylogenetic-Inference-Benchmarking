@@ -1,0 +1,532 @@
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 06-Aug-2020 21:49:18 as follows:
+
+raxml-ng --msa MUSCLE.aln --model GTR+I+G
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 1596775758
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (4 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: MUSCLE.aln
+[00:00:00] Loaded alignment with 100 taxa and 10434 sites
+
+Alignment comprises 1 partitions and 6391 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 10434 / 6391
+Gaps: 4.53 %
+Invariant sites: 35.80 %
+
+
+NOTE: Binary MSA file created: MUSCLE.aln.raxml.rba
+
+[00:00:00] Generating 10 random starting tree(s) with 100 taxa
+[00:00:00] Generating 10 parsimony starting tree(s) with 100 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1598 / 25568
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:00 -575015.903646] Initial branch length optimization
+[00:00:00 -468741.060165] Model parameter optimization (eps = 10.000000)
+[00:00:12 -420657.486257] AUTODETECT spr round 1 (radius: 5)
+[00:00:15 -341121.825487] AUTODETECT spr round 2 (radius: 10)
+[00:00:20 -295179.219084] AUTODETECT spr round 3 (radius: 15)
+[00:00:27 -292904.845695] AUTODETECT spr round 4 (radius: 20)
+[00:00:34 -292904.116404] AUTODETECT spr round 5 (radius: 25)
+[00:00:36 -292904.070012] SPR radius for FAST iterations: 20 (autodetect)
+[00:00:36 -292904.070012] Model parameter optimization (eps = 3.000000)
+[00:00:39 -291363.912026] FAST spr round 1 (radius: 20)
+[00:00:47 -278861.484980] FAST spr round 2 (radius: 20)
+[00:00:55 -278492.232364] FAST spr round 3 (radius: 20)
+[00:01:01 -278468.620311] FAST spr round 4 (radius: 20)
+[00:01:07 -278463.435996] FAST spr round 5 (radius: 20)
+[00:01:12 -278446.549038] FAST spr round 6 (radius: 20)
+[00:01:18 -278445.514656] FAST spr round 7 (radius: 20)
+[00:01:29 -278444.834781] FAST spr round 8 (radius: 20)
+[00:01:37 -278444.502116] FAST spr round 9 (radius: 20)
+[00:01:42 -278444.501626] Model parameter optimization (eps = 1.000000)
+[00:01:43 -278440.464717] SLOW spr round 1 (radius: 5)
+[00:02:02 -278439.217622] SLOW spr round 2 (radius: 5)
+[00:02:21 -278439.216715] SLOW spr round 3 (radius: 10)
+[00:02:39 -278439.216577] SLOW spr round 4 (radius: 15)
+[00:03:04 -278439.216554] SLOW spr round 5 (radius: 20)
+[00:03:14 -278439.216550] SLOW spr round 6 (radius: 25)
+[00:03:15 -278439.216550] Model parameter optimization (eps = 0.100000)
+
+[00:03:16] ML tree search #1, logLikelihood: -278439.136692
+
+[00:03:16 -572630.707773] Initial branch length optimization
+[00:03:16 -465729.492739] Model parameter optimization (eps = 10.000000)
+[00:03:26 -418230.480289] AUTODETECT spr round 1 (radius: 5)
+[00:03:29 -336437.309911] AUTODETECT spr round 2 (radius: 10)
+[00:03:37 -285928.152911] AUTODETECT spr round 3 (radius: 15)
+[00:03:44 -284945.734223] AUTODETECT spr round 4 (radius: 20)
+[00:03:49 -284945.309121] AUTODETECT spr round 5 (radius: 25)
+[00:03:51 -284945.273743] SPR radius for FAST iterations: 20 (autodetect)
+[00:03:51 -284945.273743] Model parameter optimization (eps = 3.000000)
+[00:03:54 -283564.560661] FAST spr round 1 (radius: 20)
+[00:04:06 -278597.428791] FAST spr round 2 (radius: 20)
+[00:04:14 -278442.645382] FAST spr round 3 (radius: 20)
+[00:04:22 -278440.963225] FAST spr round 4 (radius: 20)
+[00:04:29 -278440.962899] Model parameter optimization (eps = 1.000000)
+[00:04:31 -278439.262270] SLOW spr round 1 (radius: 5)
+[00:04:54 -278439.208616] SLOW spr round 2 (radius: 10)
+[00:05:16 -278439.205036] SLOW spr round 3 (radius: 15)
+[00:05:40 -278439.204445] SLOW spr round 4 (radius: 20)
+[00:05:50 -278439.204349] SLOW spr round 5 (radius: 25)
+[00:05:51 -278439.204333] Model parameter optimization (eps = 0.100000)
+
+[00:05:51] ML tree search #2, logLikelihood: -278439.138060
+
+[00:05:51 -574718.004971] Initial branch length optimization
+[00:05:51 -467944.443249] Model parameter optimization (eps = 10.000000)
+[00:06:02 -420372.405799] AUTODETECT spr round 1 (radius: 5)
+[00:06:05 -327987.754397] AUTODETECT spr round 2 (radius: 10)
+[00:06:11 -286614.320869] AUTODETECT spr round 3 (radius: 15)
+[00:06:18 -284205.395781] AUTODETECT spr round 4 (radius: 20)
+[00:06:21 -284205.306257] SPR radius for FAST iterations: 15 (autodetect)
+[00:06:21 -284205.306257] Model parameter optimization (eps = 3.000000)
+[00:06:23 -282906.436213] FAST spr round 1 (radius: 15)
+[00:06:32 -278696.884502] FAST spr round 2 (radius: 15)
+[00:06:41 -278482.570458] FAST spr round 3 (radius: 15)
+[00:06:48 -278442.623019] FAST spr round 4 (radius: 15)
+[00:06:55 -278442.617670] Model parameter optimization (eps = 1.000000)
+[00:06:56 -278440.472386] SLOW spr round 1 (radius: 5)
+[00:07:17 -278439.233247] SLOW spr round 2 (radius: 5)
+[00:07:34 -278439.231933] SLOW spr round 3 (radius: 10)
+[00:07:54 -278439.231731] SLOW spr round 4 (radius: 15)
+[00:08:20 -278439.231696] SLOW spr round 5 (radius: 20)
+[00:08:32 -278439.231690] SLOW spr round 6 (radius: 25)
+[00:08:33 -278439.231689] Model parameter optimization (eps = 0.100000)
+
+[00:08:33] ML tree search #3, logLikelihood: -278439.146190
+
+[00:08:33 -579861.227373] Initial branch length optimization
+[00:08:33 -473196.641215] Model parameter optimization (eps = 10.000000)
+[00:08:46 -424841.434831] AUTODETECT spr round 1 (radius: 5)
+[00:08:50 -345391.489692] AUTODETECT spr round 2 (radius: 10)
+[00:08:55 -288911.607157] AUTODETECT spr round 3 (radius: 15)
+[00:09:03 -288126.830656] AUTODETECT spr round 4 (radius: 20)
+[00:09:09 -288126.615667] AUTODETECT spr round 5 (radius: 25)
+[00:09:13 -288126.564746] SPR radius for FAST iterations: 20 (autodetect)
+[00:09:13 -288126.564746] Model parameter optimization (eps = 3.000000)
+[00:09:17 -286417.033508] FAST spr round 1 (radius: 20)
+[00:09:28 -279002.013790] FAST spr round 2 (radius: 20)
+[00:09:39 -278451.405487] FAST spr round 3 (radius: 20)
+[00:09:48 -278448.085244] FAST spr round 4 (radius: 20)
+[00:09:55 -278445.656576] FAST spr round 5 (radius: 20)
+[00:10:02 -278445.385903] FAST spr round 6 (radius: 20)
+[00:10:09 -278445.322966] Model parameter optimization (eps = 1.000000)
+[00:10:10 -278440.450138] SLOW spr round 1 (radius: 5)
+[00:10:29 -278439.220850] SLOW spr round 2 (radius: 5)
+[00:10:47 -278439.219825] SLOW spr round 3 (radius: 10)
+[00:11:05 -278439.219701] SLOW spr round 4 (radius: 15)
+[00:11:35 -278439.219681] SLOW spr round 5 (radius: 20)
+[00:11:45 -278439.219678] SLOW spr round 6 (radius: 25)
+[00:11:45 -278439.219677] Model parameter optimization (eps = 0.100000)
+
+[00:11:46] ML tree search #4, logLikelihood: -278439.140487
+
+[00:11:46 -586893.107085] Initial branch length optimization
+[00:11:46 -474537.839997] Model parameter optimization (eps = 10.000000)
+[00:11:59 -425600.949900] AUTODETECT spr round 1 (radius: 5)
+[00:12:03 -358240.460995] AUTODETECT spr round 2 (radius: 10)
+[00:12:08 -294951.899207] AUTODETECT spr round 3 (radius: 15)
+[00:12:17 -288238.576736] AUTODETECT spr round 4 (radius: 20)
+[00:12:22 -288237.335576] AUTODETECT spr round 5 (radius: 25)
+[00:12:23 -288237.273741] SPR radius for FAST iterations: 20 (autodetect)
+[00:12:23 -288237.273741] Model parameter optimization (eps = 3.000000)
+[00:12:27 -286256.621055] FAST spr round 1 (radius: 20)
+[00:12:38 -279096.917360] FAST spr round 2 (radius: 20)
+[00:12:45 -278488.512439] FAST spr round 3 (radius: 20)
+[00:12:54 -278470.421511] FAST spr round 4 (radius: 20)
+[00:12:59 -278468.612750] FAST spr round 5 (radius: 20)
+[00:13:04 -278468.587365] Model parameter optimization (eps = 1.000000)
+[00:13:06 -278462.939966] SLOW spr round 1 (radius: 5)
+[00:13:23 -278439.143308] SLOW spr round 2 (radius: 5)
+[00:13:38 -278439.139677] SLOW spr round 3 (radius: 10)
+[00:13:56 -278439.139128] SLOW spr round 4 (radius: 15)
+[00:14:22 -278439.139040] SLOW spr round 5 (radius: 20)
+[00:14:33 -278439.139026] SLOW spr round 6 (radius: 25)
+[00:14:34 -278439.139024] Model parameter optimization (eps = 0.100000)
+
+[00:14:34] ML tree search #5, logLikelihood: -278439.077593
+
+[00:14:34 -571557.900461] Initial branch length optimization
+[00:14:35 -465208.944400] Model parameter optimization (eps = 10.000000)
+[00:14:47 -418267.014488] AUTODETECT spr round 1 (radius: 5)
+[00:14:50 -341537.733231] AUTODETECT spr round 2 (radius: 10)
+[00:14:55 -299518.586631] AUTODETECT spr round 3 (radius: 15)
+[00:15:03 -284598.011859] AUTODETECT spr round 4 (radius: 20)
+[00:15:06 -284597.552828] AUTODETECT spr round 5 (radius: 25)
+[00:15:08 -284597.515141] SPR radius for FAST iterations: 20 (autodetect)
+[00:15:08 -284597.515141] Model parameter optimization (eps = 3.000000)
+[00:15:10 -283232.624595] FAST spr round 1 (radius: 20)
+[00:15:18 -279069.264096] FAST spr round 2 (radius: 20)
+[00:15:25 -278461.615719] FAST spr round 3 (radius: 20)
+[00:15:31 -278459.770713] FAST spr round 4 (radius: 20)
+[00:15:37 -278458.119311] FAST spr round 5 (radius: 20)
+[00:15:45 -278457.959787] FAST spr round 6 (radius: 20)
+[00:15:52 -278444.798953] FAST spr round 7 (radius: 20)
+[00:16:00 -278444.798952] Model parameter optimization (eps = 1.000000)
+[00:16:01 -278440.686647] SLOW spr round 1 (radius: 5)
+[00:16:17 -278439.379289] SLOW spr round 2 (radius: 5)
+[00:16:33 -278439.379130] SLOW spr round 3 (radius: 10)
+[00:16:50 -278439.379124] SLOW spr round 4 (radius: 15)
+[00:17:17 -278439.379123] SLOW spr round 5 (radius: 20)
+[00:17:27 -278439.379123] SLOW spr round 6 (radius: 25)
+[00:17:28 -278439.379123] Model parameter optimization (eps = 0.100000)
+
+[00:17:29] ML tree search #6, logLikelihood: -278439.149018
+
+[00:17:29 -579109.188162] Initial branch length optimization
+[00:17:29 -467436.315349] Model parameter optimization (eps = 10.000000)
+[00:17:41 -419722.946920] AUTODETECT spr round 1 (radius: 5)
+[00:17:44 -346969.389027] AUTODETECT spr round 2 (radius: 10)
+[00:17:49 -298746.009591] AUTODETECT spr round 3 (radius: 15)
+[00:17:57 -287819.368706] AUTODETECT spr round 4 (radius: 20)
+[00:18:01 -287377.588380] AUTODETECT spr round 5 (radius: 25)
+[00:18:03 -287377.559755] SPR radius for FAST iterations: 20 (autodetect)
+[00:18:03 -287377.559755] Model parameter optimization (eps = 3.000000)
+[00:18:07 -285907.341866] FAST spr round 1 (radius: 20)
+[00:18:16 -279541.202388] FAST spr round 2 (radius: 20)
+[00:18:26 -278496.414910] FAST spr round 3 (radius: 20)
+[00:18:33 -278465.309206] FAST spr round 4 (radius: 20)
+[00:18:38 -278451.856138] FAST spr round 5 (radius: 20)
+[00:18:43 -278451.856054] Model parameter optimization (eps = 1.000000)
+[00:18:45 -278445.952198] SLOW spr round 1 (radius: 5)
+[00:19:01 -278439.239436] SLOW spr round 2 (radius: 5)
+[00:19:15 -278439.236717] SLOW spr round 3 (radius: 10)
+[00:19:32 -278439.236288] SLOW spr round 4 (radius: 15)
+[00:20:01 -278439.236219] SLOW spr round 5 (radius: 20)
+[00:20:13 -278439.236208] SLOW spr round 6 (radius: 25)
+[00:20:13 -278439.236207] Model parameter optimization (eps = 0.100000)
+
+[00:20:14] ML tree search #7, logLikelihood: -278439.142665
+
+[00:20:14 -568908.256327] Initial branch length optimization
+[00:20:14 -458167.604963] Model parameter optimization (eps = 10.000000)
+[00:20:25 -411494.515595] AUTODETECT spr round 1 (radius: 5)
+[00:20:29 -335988.196829] AUTODETECT spr round 2 (radius: 10)
+[00:20:34 -301279.238025] AUTODETECT spr round 3 (radius: 15)
+[00:20:41 -294635.820672] AUTODETECT spr round 4 (radius: 20)
+[00:20:45 -294634.958824] AUTODETECT spr round 5 (radius: 25)
+[00:20:47 -294634.912680] SPR radius for FAST iterations: 20 (autodetect)
+[00:20:47 -294634.912680] Model parameter optimization (eps = 3.000000)
+[00:20:50 -293351.829723] FAST spr round 1 (radius: 20)
+[00:21:00 -281099.043609] FAST spr round 2 (radius: 20)
+[00:21:09 -278601.589603] FAST spr round 3 (radius: 20)
+[00:21:15 -278467.275359] FAST spr round 4 (radius: 20)
+[00:21:25 -278457.387284] FAST spr round 5 (radius: 20)
+[00:21:33 -278453.847373] FAST spr round 6 (radius: 20)
+[00:21:38 -278452.206621] FAST spr round 7 (radius: 20)
+[00:21:44 -278451.566839] FAST spr round 8 (radius: 20)
+[00:21:49 -278451.566829] Model parameter optimization (eps = 1.000000)
+[00:21:50 -278445.089205] SLOW spr round 1 (radius: 5)
+[00:22:08 -278439.360330] SLOW spr round 2 (radius: 5)
+[00:22:24 -278439.358947] SLOW spr round 3 (radius: 10)
+[00:22:40 -278439.358797] SLOW spr round 4 (radius: 15)
+[00:23:07 -278439.358773] SLOW spr round 5 (radius: 20)
+[00:23:19 -278439.358769] SLOW spr round 6 (radius: 25)
+[00:23:20 -278439.358768] Model parameter optimization (eps = 0.100000)
+
+[00:23:21] ML tree search #8, logLikelihood: -278439.147761
+
+[00:23:21 -580762.044163] Initial branch length optimization
+[00:23:21 -465815.396433] Model parameter optimization (eps = 10.000000)
+[00:23:34 -417697.851224] AUTODETECT spr round 1 (radius: 5)
+[00:23:37 -337588.075831] AUTODETECT spr round 2 (radius: 10)
+[00:23:45 -302128.870028] AUTODETECT spr round 3 (radius: 15)
+[00:23:51 -291414.940787] AUTODETECT spr round 4 (radius: 20)
+[00:23:55 -291412.765935] AUTODETECT spr round 5 (radius: 25)
+[00:23:56 -291412.711127] SPR radius for FAST iterations: 20 (autodetect)
+[00:23:56 -291412.711127] Model parameter optimization (eps = 3.000000)
+[00:24:00 -289684.984292] FAST spr round 1 (radius: 20)
+[00:24:10 -278990.683551] FAST spr round 2 (radius: 20)
+[00:24:20 -278558.837723] FAST spr round 3 (radius: 20)
+[00:24:26 -278475.548077] FAST spr round 4 (radius: 20)
+[00:24:31 -278470.562659] FAST spr round 5 (radius: 20)
+[00:24:37 -278468.125707] FAST spr round 6 (radius: 20)
+[00:24:42 -278466.329816] FAST spr round 7 (radius: 20)
+[00:24:47 -278465.921581] FAST spr round 8 (radius: 20)
+[00:24:53 -278465.911618] Model parameter optimization (eps = 1.000000)
+[00:24:54 -278463.178342] SLOW spr round 1 (radius: 5)
+[00:25:12 -278439.227452] SLOW spr round 2 (radius: 5)
+[00:25:28 -278439.224237] SLOW spr round 3 (radius: 10)
+[00:25:45 -278439.223706] SLOW spr round 4 (radius: 15)
+[00:26:11 -278439.223616] SLOW spr round 5 (radius: 20)
+[00:26:21 -278439.223601] SLOW spr round 6 (radius: 25)
+[00:26:22 -278439.223598] Model parameter optimization (eps = 0.100000)
+
+[00:26:22] ML tree search #9, logLikelihood: -278439.140376
+
+[00:26:22 -581334.430962] Initial branch length optimization
+[00:26:23 -471613.769620] Model parameter optimization (eps = 10.000000)
+[00:26:35 -423021.756198] AUTODETECT spr round 1 (radius: 5)
+[00:26:38 -341555.089322] AUTODETECT spr round 2 (radius: 10)
+[00:26:44 -291991.190282] AUTODETECT spr round 3 (radius: 15)
+[00:26:50 -289922.976819] AUTODETECT spr round 4 (radius: 20)
+[00:26:55 -289920.541113] AUTODETECT spr round 5 (radius: 25)
+[00:26:57 -289920.508690] SPR radius for FAST iterations: 20 (autodetect)
+[00:26:57 -289920.508690] Model parameter optimization (eps = 3.000000)
+[00:27:01 -287913.130937] FAST spr round 1 (radius: 20)
+[00:27:10 -279103.952814] FAST spr round 2 (radius: 20)
+[00:27:18 -278554.754893] FAST spr round 3 (radius: 20)
+[00:27:25 -278471.126560] FAST spr round 4 (radius: 20)
+[00:27:31 -278444.586783] FAST spr round 5 (radius: 20)
+[00:27:37 -278442.803760] FAST spr round 6 (radius: 20)
+[00:27:42 -278442.803419] Model parameter optimization (eps = 1.000000)
+[00:27:44 -278440.258339] SLOW spr round 1 (radius: 5)
+[00:28:08 -278439.195802] SLOW spr round 2 (radius: 5)
+[00:28:25 -278439.195200] SLOW spr round 3 (radius: 10)
+[00:28:44 -278439.195129] SLOW spr round 4 (radius: 15)
+[00:29:12 -278439.195119] SLOW spr round 5 (radius: 20)
+[00:29:23 -278439.195117] SLOW spr round 6 (radius: 25)
+[00:29:24 -278439.195117] Model parameter optimization (eps = 0.100000)
+
+[00:29:25] ML tree search #10, logLikelihood: -278439.072564
+
+[00:29:25 -338913.376843] Initial branch length optimization
+[00:29:25 -308424.834294] Model parameter optimization (eps = 10.000000)
+[00:29:28 -278907.414965] AUTODETECT spr round 1 (radius: 5)
+[00:29:31 -278492.112535] AUTODETECT spr round 2 (radius: 10)
+[00:29:40 -278492.087513] SPR radius for FAST iterations: 5 (autodetect)
+[00:29:40 -278492.087513] Model parameter optimization (eps = 3.000000)
+[00:29:40 -278491.533961] FAST spr round 1 (radius: 5)
+[00:29:46 -278439.481619] FAST spr round 2 (radius: 5)
+[00:29:52 -278439.186585] FAST spr round 3 (radius: 5)
+[00:29:57 -278439.185535] Model parameter optimization (eps = 1.000000)
+[00:29:57 -278439.092354] SLOW spr round 1 (radius: 5)
+[00:30:12 -278439.090108] SLOW spr round 2 (radius: 10)
+[00:30:28 -278439.090089] SLOW spr round 3 (radius: 15)
+[00:30:52 -278439.090086] SLOW spr round 4 (radius: 20)
+[00:31:02 -278439.090085] SLOW spr round 5 (radius: 25)
+[00:31:02 -278439.090085] Model parameter optimization (eps = 0.100000)
+
+[00:31:03] ML tree search #11, logLikelihood: -278439.068223
+
+[00:31:03 -339022.822988] Initial branch length optimization
+[00:31:03 -308529.001925] Model parameter optimization (eps = 10.000000)
+[00:31:07 -278978.526817] AUTODETECT spr round 1 (radius: 5)
+[00:31:09 -278530.052288] AUTODETECT spr round 2 (radius: 10)
+[00:31:16 -278530.044075] SPR radius for FAST iterations: 5 (autodetect)
+[00:31:16 -278530.044075] Model parameter optimization (eps = 3.000000)
+[00:31:16 -278529.185230] FAST spr round 1 (radius: 5)
+[00:31:22 -278440.456918] FAST spr round 2 (radius: 5)
+[00:31:30 -278439.409033] FAST spr round 3 (radius: 5)
+[00:31:34 -278439.393283] Model parameter optimization (eps = 1.000000)
+[00:31:34 -278439.137751] SLOW spr round 1 (radius: 5)
+[00:31:50 -278439.136291] SLOW spr round 2 (radius: 10)
+[00:32:08 -278439.136170] SLOW spr round 3 (radius: 15)
+[00:32:35 -278439.136149] SLOW spr round 4 (radius: 20)
+[00:32:44 -278439.136146] SLOW spr round 5 (radius: 25)
+[00:32:45 -278439.136145] Model parameter optimization (eps = 0.100000)
+
+[00:32:46] ML tree search #12, logLikelihood: -278439.085002
+
+[00:32:46 -339073.047937] Initial branch length optimization
+[00:32:46 -308601.348563] Model parameter optimization (eps = 10.000000)
+[00:32:50 -279064.838237] AUTODETECT spr round 1 (radius: 5)
+[00:32:54 -278526.434796] AUTODETECT spr round 2 (radius: 10)
+[00:33:06 -278526.432354] SPR radius for FAST iterations: 5 (autodetect)
+[00:33:06 -278526.432354] Model parameter optimization (eps = 3.000000)
+[00:33:07 -278525.995770] FAST spr round 1 (radius: 5)
+[00:33:13 -278465.834046] FAST spr round 2 (radius: 5)
+[00:33:18 -278464.665260] FAST spr round 3 (radius: 5)
+[00:33:22 -278464.040739] FAST spr round 4 (radius: 5)
+[00:33:27 -278462.255281] FAST spr round 5 (radius: 5)
+[00:33:33 -278462.254397] Model parameter optimization (eps = 1.000000)
+[00:33:33 -278462.130376] SLOW spr round 1 (radius: 5)
+[00:33:49 -278439.119944] SLOW spr round 2 (radius: 5)
+[00:34:03 -278439.119911] SLOW spr round 3 (radius: 10)
+[00:34:18 -278439.119906] SLOW spr round 4 (radius: 15)
+[00:34:47 -278439.119905] SLOW spr round 5 (radius: 20)
+[00:34:57 -278439.119905] SLOW spr round 6 (radius: 25)
+[00:34:58 -278439.119905] Model parameter optimization (eps = 0.100000)
+
+[00:34:59] ML tree search #13, logLikelihood: -278439.081635
+
+[00:34:59 -338570.710646] Initial branch length optimization
+[00:34:59 -308301.788378] Model parameter optimization (eps = 10.000000)
+[00:35:04 -278805.212253] AUTODETECT spr round 1 (radius: 5)
+[00:35:07 -278461.856737] AUTODETECT spr round 2 (radius: 10)
+[00:35:15 -278461.853742] SPR radius for FAST iterations: 5 (autodetect)
+[00:35:15 -278461.853742] Model parameter optimization (eps = 3.000000)
+[00:35:16 -278461.345948] FAST spr round 1 (radius: 5)
+[00:35:23 -278439.271680] FAST spr round 2 (radius: 5)
+[00:35:30 -278439.268989] Model parameter optimization (eps = 1.000000)
+[00:35:31 -278439.161206] SLOW spr round 1 (radius: 5)
+[00:35:47 -278439.160232] SLOW spr round 2 (radius: 10)
+[00:36:04 -278439.160224] SLOW spr round 3 (radius: 15)
+[00:37:03 -278439.160222] SLOW spr round 4 (radius: 20)
+[00:37:20 -278439.160222] SLOW spr round 5 (radius: 25)
+[00:37:20 -278439.160222] Model parameter optimization (eps = 0.100000)
+
+[00:37:21] ML tree search #14, logLikelihood: -278439.134230
+
+[00:37:21 -339180.865032] Initial branch length optimization
+[00:37:21 -308889.358639] Model parameter optimization (eps = 10.000000)
+[00:37:25 -279366.055082] AUTODETECT spr round 1 (radius: 5)
+[00:37:28 -278474.399054] AUTODETECT spr round 2 (radius: 10)
+[00:37:35 -278474.394408] SPR radius for FAST iterations: 5 (autodetect)
+[00:37:35 -278474.394408] Model parameter optimization (eps = 3.000000)
+[00:37:36 -278473.222902] FAST spr round 1 (radius: 5)
+[00:37:42 -278450.530718] FAST spr round 2 (radius: 5)
+[00:37:50 -278446.989313] FAST spr round 3 (radius: 5)
+[00:37:57 -278445.224471] FAST spr round 4 (radius: 5)
+[00:38:04 -278444.917011] FAST spr round 5 (radius: 5)
+[00:38:09 -278444.916684] Model parameter optimization (eps = 1.000000)
+[00:38:09 -278444.662947] SLOW spr round 1 (radius: 5)
+[00:38:30 -278439.138404] SLOW spr round 2 (radius: 5)
+[00:38:45 -278439.138131] SLOW spr round 3 (radius: 10)
+[00:39:02 -278439.138090] SLOW spr round 4 (radius: 15)
+[00:39:28 -278439.138084] SLOW spr round 5 (radius: 20)
+[00:39:37 -278439.138083] SLOW spr round 6 (radius: 25)
+[00:39:38 -278439.138083] Model parameter optimization (eps = 0.100000)
+
+[00:39:38] ML tree search #15, logLikelihood: -278439.094498
+
+[00:39:38 -339254.897686] Initial branch length optimization
+[00:39:39 -308565.612823] Model parameter optimization (eps = 10.000000)
+[00:39:42 -279018.998514] AUTODETECT spr round 1 (radius: 5)
+[00:39:45 -278540.054471] AUTODETECT spr round 2 (radius: 10)
+[00:39:52 -278465.659747] AUTODETECT spr round 3 (radius: 15)
+[00:39:58 -278465.658283] SPR radius for FAST iterations: 10 (autodetect)
+[00:39:58 -278465.658283] Model parameter optimization (eps = 3.000000)
+[00:39:59 -278465.120299] FAST spr round 1 (radius: 10)
+[00:40:05 -278446.677239] FAST spr round 2 (radius: 10)
+[00:40:10 -278444.868516] FAST spr round 3 (radius: 10)
+[00:40:16 -278444.868057] Model parameter optimization (eps = 1.000000)
+[00:40:17 -278444.701522] SLOW spr round 1 (radius: 5)
+[00:40:36 -278439.170075] SLOW spr round 2 (radius: 5)
+[00:40:52 -278439.169993] SLOW spr round 3 (radius: 10)
+[00:41:10 -278439.169985] SLOW spr round 4 (radius: 15)
+[00:41:37 -278439.169984] SLOW spr round 5 (radius: 20)
+[00:41:47 -278439.169984] SLOW spr round 6 (radius: 25)
+[00:41:48 -278439.169983] Model parameter optimization (eps = 0.100000)
+
+[00:41:49] ML tree search #16, logLikelihood: -278439.142275
+
+[00:41:49 -338928.736345] Initial branch length optimization
+[00:41:49 -308418.196879] Model parameter optimization (eps = 10.000000)
+[00:41:53 -278926.038903] AUTODETECT spr round 1 (radius: 5)
+[00:41:56 -278482.412909] AUTODETECT spr round 2 (radius: 10)
+[00:42:03 -278482.411159] SPR radius for FAST iterations: 5 (autodetect)
+[00:42:03 -278482.411159] Model parameter optimization (eps = 3.000000)
+[00:42:04 -278481.419239] FAST spr round 1 (radius: 5)
+[00:42:09 -278445.919405] FAST spr round 2 (radius: 5)
+[00:42:14 -278445.279306] FAST spr round 3 (radius: 5)
+[00:42:20 -278445.278227] Model parameter optimization (eps = 1.000000)
+[00:42:21 -278445.025423] SLOW spr round 1 (radius: 5)
+[00:42:37 -278439.199382] SLOW spr round 2 (radius: 5)
+[00:42:53 -278439.199265] SLOW spr round 3 (radius: 10)
+[00:43:08 -278439.199251] SLOW spr round 4 (radius: 15)
+[00:43:36 -278439.199249] SLOW spr round 5 (radius: 20)
+[00:43:46 -278439.199248] SLOW spr round 6 (radius: 25)
+[00:43:47 -278439.199248] Model parameter optimization (eps = 0.100000)
+
+[00:43:48] ML tree search #17, logLikelihood: -278439.153915
+
+[00:43:48 -339050.217698] Initial branch length optimization
+[00:43:48 -308447.631701] Model parameter optimization (eps = 10.000000)
+[00:43:51 -278933.609942] AUTODETECT spr round 1 (radius: 5)
+[00:43:54 -278480.578869] AUTODETECT spr round 2 (radius: 10)
+[00:44:01 -278480.573791] SPR radius for FAST iterations: 5 (autodetect)
+[00:44:01 -278480.573791] Model parameter optimization (eps = 3.000000)
+[00:44:02 -278479.677738] FAST spr round 1 (radius: 5)
+[00:44:09 -278448.289560] FAST spr round 2 (radius: 5)
+[00:44:16 -278444.851290] FAST spr round 3 (radius: 5)
+[00:44:22 -278444.850253] Model parameter optimization (eps = 1.000000)
+[00:44:22 -278444.704037] SLOW spr round 1 (radius: 5)
+[00:44:42 -278439.175575] SLOW spr round 2 (radius: 5)
+[00:44:58 -278439.175512] SLOW spr round 3 (radius: 10)
+[00:45:15 -278439.175505] SLOW spr round 4 (radius: 15)
+[00:45:41 -278439.175504] SLOW spr round 5 (radius: 20)
+[00:45:51 -278439.175504] SLOW spr round 6 (radius: 25)
+[00:45:52 -278439.175504] Model parameter optimization (eps = 0.100000)
+
+[00:45:53] ML tree search #18, logLikelihood: -278439.148978
+
+[00:45:53 -338912.973909] Initial branch length optimization
+[00:45:53 -308393.232263] Model parameter optimization (eps = 10.000000)
+[00:45:57 -278917.225864] AUTODETECT spr round 1 (radius: 5)
+[00:46:00 -278530.562403] AUTODETECT spr round 2 (radius: 10)
+[00:46:06 -278453.402299] AUTODETECT spr round 3 (radius: 15)
+[00:46:13 -278453.400101] SPR radius for FAST iterations: 10 (autodetect)
+[00:46:13 -278453.400101] Model parameter optimization (eps = 3.000000)
+[00:46:13 -278452.846307] FAST spr round 1 (radius: 10)
+[00:46:20 -278439.841046] FAST spr round 2 (radius: 10)
+[00:46:29 -278439.250092] FAST spr round 3 (radius: 10)
+[00:46:37 -278439.250067] Model parameter optimization (eps = 1.000000)
+[00:46:37 -278439.104219] SLOW spr round 1 (radius: 5)
+[00:46:53 -278439.101554] SLOW spr round 2 (radius: 10)
+[00:47:08 -278439.101342] SLOW spr round 3 (radius: 15)
+[00:47:36 -278439.101307] SLOW spr round 4 (radius: 20)
+[00:47:47 -278439.101301] SLOW spr round 5 (radius: 25)
+[00:47:48 -278439.101300] Model parameter optimization (eps = 0.100000)
+
+[00:47:48] ML tree search #19, logLikelihood: -278439.074698
+
+[00:47:48 -338388.841623] Initial branch length optimization
+[00:47:49 -308143.000241] Model parameter optimization (eps = 10.000000)
+[00:47:54 -278695.403853] AUTODETECT spr round 1 (radius: 5)
+[00:47:57 -278466.859724] AUTODETECT spr round 2 (radius: 10)
+[00:48:04 -278466.852417] SPR radius for FAST iterations: 5 (autodetect)
+[00:48:04 -278466.852417] Model parameter optimization (eps = 3.000000)
+[00:48:04 -278466.136440] FAST spr round 1 (radius: 5)
+[00:48:12 -278446.599307] FAST spr round 2 (radius: 5)
+[00:48:18 -278445.537100] FAST spr round 3 (radius: 5)
+[00:48:24 -278444.903358] FAST spr round 4 (radius: 5)
+[00:48:31 -278444.891258] Model parameter optimization (eps = 1.000000)
+[00:48:31 -278444.701042] SLOW spr round 1 (radius: 5)
+[00:48:47 -278439.168630] SLOW spr round 2 (radius: 5)
+[00:49:01 -278439.168592] SLOW spr round 3 (radius: 10)
+[00:49:17 -278439.168589] SLOW spr round 4 (radius: 15)
+[00:49:41 -278439.168589] SLOW spr round 5 (radius: 20)
+[00:49:51 -278439.168589] SLOW spr round 6 (radius: 25)
+[00:49:51 -278439.168589] Model parameter optimization (eps = 0.100000)
+
+[00:49:52] ML tree search #20, logLikelihood: -278439.137398
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.620625 (ML),  weights&rates: (0.250000,0.057388) (0.250000,0.323544) (0.250000,0.891487) (0.250000,2.727581) 
+   P-inv (ML): 0.298308
+   Base frequencies (ML): 0.202630 0.296740 0.285666 0.214963 
+   Substitution rates (ML): 2.013083 12.958347 2.766765 1.030948 16.174294 1.000000 
+
+
+Final LogLikelihood: -278439.068223
+
+AIC score: 557292.136445 / AICc score: 557300.557333 / BIC score: 558793.471217
+Free parameters (model + branch lengths): 207
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/evaluationAnalysis/hcvTrials/hcv5/MUSCLE/RAxML/MUSCLE.aln.raxml.bestTree
+All ML trees saved to: /home/colin/Desktop/NiemaLab/evaluationAnalysis/hcvTrials/hcv5/MUSCLE/RAxML/MUSCLE.aln.raxml.mlTrees
+Optimized model saved to: /home/colin/Desktop/NiemaLab/evaluationAnalysis/hcvTrials/hcv5/MUSCLE/RAxML/MUSCLE.aln.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/evaluationAnalysis/hcvTrials/hcv5/MUSCLE/RAxML/MUSCLE.aln.raxml.log
+
+Analysis started: 06-Aug-2020 21:49:18 / finished: 06-Aug-2020 22:39:10
+
+Elapsed time: 2992.077 seconds
+
