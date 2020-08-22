@@ -3,9 +3,24 @@
 for ((i=0; i < 10; i++))
 do
     cd ebola$i/IQTreeMFP
-    rm *
-    cp ../trueData/ebolaTrueMSA.fasta .
-    iqtree -m MFP -s ebolaTrueMSA.fasta -nt AUTO
+    #rm *
+    #cp ../trueData/ebolaTrueMSA.fasta .
+    #iqtree -m MFP -s ebolaTrueMSA.fasta -nt AUTO
 
-    cd ../../
+    cd ../MAFFT/IQTreeMFP
+    rm *
+    cp ../MAFFT.aln .
+    iqtree -m MFP -s MAFFT.aln -nt AUTO
+
+    cd ../../ClustalOmega/IQTreeMFP
+    rm *
+    cp ../Clustal.aln .
+    iqtree -m MFP -s Clustal.aln -nt AUTO
+
+    cd ../../MUSCLE/IQTreeMFP
+    rm *
+    cp ../MUSCLE.aln .
+    iqtree -m MFP -s MUSCLE.aln -nt AUTO
+
+    cd ../../../
 done

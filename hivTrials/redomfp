@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+for ((i=0; i < 10; i++))
+do
+    cd hiv$i/IQTreeMFP
+    rm *
+    cp ../trueData/hivTrueMSA.fasta .
+    iqtree -m MFP -s hivTrueMSA.fasta -nt AUTO
+
+    cd ../MAFFT/IQTreeMFP
+    rm *
+    cp ../MAFFT.aln .
+    iqtree -m MFP -s MAFFT.aln -nt AUTO
+
+    cd ../../ClustalOmega/IQTreeMFP
+    rm *
+    cp ../Clustal.aln .
+    iqtree -m MFP -s Clustal.aln -nt AUTO
+
+    cd ../../MUSCLE/IQTreeMFP
+    rm *
+    cp ../MUSCLE.aln .
+    iqtree -m MFP -s MUSCLE.aln -nt AUTO
+
+    cd ../../../
+done
