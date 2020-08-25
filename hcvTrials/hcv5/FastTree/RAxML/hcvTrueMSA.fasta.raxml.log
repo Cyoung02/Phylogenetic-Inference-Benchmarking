@@ -1,0 +1,73 @@
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 25-Aug-2020 02:19:35 as follows:
+
+raxml-ng --msa hcvTrueMSA.fasta --model GTR+I+G --evaluate --tree resolved.tre
+
+Analysis options:
+  run mode: Evaluate tree likelihood
+  start tree(s): user
+  random seed: 1598347175
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (4 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: hcvTrueMSA.fasta
+[00:00:00] Loaded alignment with 100 taxa and 10434 sites
+
+Alignment comprises 1 partitions and 6391 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 10434 / 6391
+Gaps: 4.53 %
+Invariant sites: 35.88 %
+
+
+NOTE: Binary MSA file created: hcvTrueMSA.fasta.raxml.rba
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1598 / 25568
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -308498.975069
+
+[00:00:00 -308498.975069] Initial branch length optimization
+[00:00:00 -307827.905636] Model parameter optimization (eps = 0.100000)
+
+[00:00:03] Tree #1, final logLikelihood: -278373.704882
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.622715 (ML),  weights&rates: (0.250000,0.057824) (0.250000,0.324665) (0.250000,0.892479) (0.250000,2.725031) 
+   P-inv (ML): 0.300113
+   Base frequencies (ML): 0.202884 0.296580 0.285809 0.214728 
+   Substitution rates (ML): 2.000126 12.854513 2.749634 1.024081 16.121074 1.000000 
+
+
+Final LogLikelihood: -278373.704882
+
+AIC score: 557161.409764 / AICc score: 557169.830652 / BIC score: 558662.744535
+Free parameters (model + branch lengths): 207
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv5/FastTree/RAxML/hcvTrueMSA.fasta.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv5/FastTree/RAxML/hcvTrueMSA.fasta.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv5/FastTree/RAxML/hcvTrueMSA.fasta.raxml.log
+
+Analysis started: 25-Aug-2020 02:19:35 / finished: 25-Aug-2020 02:19:38
+
+Elapsed time: 3.234 seconds
+
