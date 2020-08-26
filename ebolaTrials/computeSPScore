@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+for ((i=0; i < 10; i++))
+do
+    java -jar ../helperScripts/FastSP.jar -r ebola$i/trueData/ebolaTrueMSA.fasta -e ebola$i/MAFFT/MAFFT.aln | grep SP-Score | sed 's/SP-Score//' >> MAFFTSP
+done
+
+for ((i=0; i < 10; i++))
+do
+    java -jar ../helperScripts/FastSP.jar -r ebola$i/trueData/ebolaTrueMSA.fasta -e ebola$i/MUSCLE/MUSCLE.aln | grep SP-Score | sed 's/SP-Score//' >> MUSCLESP
+done
+
+for ((i=0; i < 10; i++))
+do
+    java -jar ../helperScripts/FastSP.jar -r ebola$i/trueData/ebolaTrueMSA.fasta -e ebola$i/ClustalOmega/Clustal.aln | grep SP-Score | sed 's/SP-Score//' >> ClustalSP
+done
