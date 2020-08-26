@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+for ((i=0; i < 10; i++))
+do
+    java -jar ../helperScripts/FastSP.jar -r hiv$i/trueData/hivTrueMSA.fasta -e hiv$i/MAFFT/MAFFT.aln | grep Compression | sed 's/Compression//' >> MAFFTCompression
+done
+
+for ((i=0; i < 10; i++))
+do
+    java -jar ../helperScripts/FastSP.jar -r hiv$i/trueData/hivTrueMSA.fasta -e hiv$i/MUSCLE/MUSCLE.aln | grep Compression | sed 's/Compression//' >> MUSCLECompression
+done
+
+for ((i=0; i < 10; i++))
+do
+    java -jar ../helperScripts/FastSP.jar -r hiv$i/trueData/hivTrueMSA.fasta -e hiv$i/ClustalOmega/Clustal.aln | grep Compression | sed 's/Compression//' >> ClustalCompression
+done
