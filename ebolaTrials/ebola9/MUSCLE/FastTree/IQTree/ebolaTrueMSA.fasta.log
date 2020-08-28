@@ -1,0 +1,268 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    colin-System-Product-Name (AVX2, FMA3, 15 GB RAM)
+Command: iqtree -m GTR+I+R -s ebolaTrueMSA.fasta -nt AUTO -te ../fast.tre
+Seed:    429282 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Aug 26 20:12:49 2020
+Kernel:  AVX+FMA - auto-detect threads (4 CPU cores detected)
+
+Reading alignment file ebolaTrueMSA.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 100 sequences with 20303 columns, 3330 distinct patterns
+11747 parsimony-informative, 1062 singleton sites, 7494 constant sites
+                                                            Gap/Ambiguity  Composition  p-value
+   1  RESTV_M.fas-tc_USA_89_Philippines89-Pennsylvania_NC_004161    5.23%    passed     91.40%
+   2  RESTV_S.dom-tc_PHL_08_Reston08-A_FJ621583                     5.23%    passed     92.62%
+   3  RESTV_S.dom-xx_PHL_08_Reston08-C_FJ621584                     5.27%    passed     99.12%
+   4  SUDV_H.sap-xx_UGA_12_EboSud-603_KC545390                      3.79%    passed     45.92%
+   5  SUDV_H.sap-xx_UGA_12_EboSud-609_KC545391                      3.79%    passed     45.92%
+   6  TAFV_H.sap-tc_CIV_94_Pauleoula-CI_NC_014372                   3.63%    failed      3.53%
+   7  BDBV_H.sap-xx_COD_12_EboBund-122_KC545395                     3.17%    passed     55.12%
+   8  EBOV_H.sap-tc_COD_07_1Luebo_KC242786                          3.09%    passed     99.94%
+   9  EBOV_H.sap-tc_COD_07_M-M_HQ613403                             3.09%    passed     99.94%
+  10  EBOV_H.sap-tc_COD_07_5Luebo_KC242790                          3.09%    passed     99.94%
+  11  EBOV_H.sap-tc_COD_08_034-KS_HQ613402                          3.09%    passed     99.95%
+  12  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_080076_KR817235      3.09%    passed     99.94%
+  13  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079702_KR817210      3.09%    passed    100.00%
+  14  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079587_KR817202      3.09%    passed     99.99%
+  15  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079750_KR817213      3.09%    passed    100.00%
+  16  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079910_KR817221      3.09%    passed    100.00%
+  17  EBOV_H.sap-wt_LBR_14_Makona-LIBR0430_KR006955                 3.09%    passed     99.98%
+  18  EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055                  3.09%    passed     99.98%
+  19  EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE4_KR074998             3.09%    passed     99.97%
+  20  EBOV_H.sap-wt_GIN_14_Makona-Kankan-EM_078639_KR817166         3.09%    passed    100.00%
+  21  EBOV_H.sap-wt_GIN_14_Makona-Faranah-EM_078415_KR817160        3.09%    passed     99.93%
+  22  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076191_KR817141        3.09%    passed     99.99%
+  23  EBOV_H.sap-wt_GIN_14_Makona-Beyla-EM_075931_KR817138          3.09%    passed     99.95%
+  24  EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171    3.09%    passed     99.99%
+  25  EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175    3.09%    passed     99.99%
+  26  EBOV_H.sap-wt_LBR_14_Makona-LIBR0505_KR006957                 3.09%    passed     99.99%
+  27  EBOV_H.sap-wt_SLE_14_Makona-Kailahun-20140517_KR653263        3.09%    passed     99.90%
+  28  EBOV_H.sap-wt_SLE_14_Makona-G4973_1_KR105286                  3.09%    passed     99.86%
+  29  EBOV_H.sap-wt_SLE_14_Makona-G3799_KM233080                    3.09%    passed     99.96%
+  30  EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075                    3.09%    passed     99.98%
+  31  EBOV_H.sap-wt_SLE_14_Makona-G3677.2_KM034557                  3.09%    passed     99.98%
+  32  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5059_1_KR105296           3.09%    passed     99.97%
+  33  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4702_1_KR105265           3.09%    passed     99.99%
+  34  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242           3.09%    passed     99.98%
+  35  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4971_1_KR105284           3.09%    passed     99.98%
+  36  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4937_1_KR105278           3.09%    passed     99.98%
+  37  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4856_1_KR105273           3.09%    passed     99.96%
+  38  EBOV_H.sap-wt_SLE_14_Makona-Bonthe-G5723_1_KR105319           3.09%    passed     99.96%
+  39  EBOV_H.sap-wt_SLE_14_Makona-J0042_KP759711                    3.09%    passed     99.97%
+  40  EBOV_H.sap-wt_SLE_14_Makona-J0150_KP759696                    3.09%    passed     99.83%
+  41  EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707                    3.09%    passed     99.80%
+  42  EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708                    3.09%    passed     99.80%
+  43  EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G6103_1_KR105348          3.09%    passed     99.94%
+  44  EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076                  3.09%    passed     99.98%
+  45  EBOV_H.sap-wt_SLE_14_Makona-J0054_KP759722                    3.09%    passed     99.98%
+  46  EBOV_H.sap-wt_SLE_14_Makona-G5640_1_KR105313                  3.09%    passed     99.98%
+  47  EBOV_H.sap-wt_SLE_14_Makona-G3735.2_KM233057                  3.09%    passed     99.98%
+  48  EBOV_H.sap-wt_SLE_14_Makona-EM124.3_KM233047                  3.09%    passed     99.98%
+  49  EBOV_H.sap-wt_SLE_14_Makona-G3949_1_KR105209                  3.09%    passed     99.98%
+  50  EBOV_H.sap-wt_SLE_14_Makona-G3827_KM233101                    3.09%    passed     99.96%
+  51  EBOV_H.sap-wt_SLE_14_Makona-G3840_KM233106                    3.09%    passed     99.98%
+  52  EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5763_1_KR105325          3.09%    passed     99.96%
+  53  EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5844_1_KR105328          3.09%    passed     99.96%
+  54  EBOV_H.sap-wt_SLE_14_Makona-EM110_KM233037                    3.09%    passed     99.98%
+  55  EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118                  3.09%    passed     99.98%
+  56  EBOV_H.sap-wt_SLE_14_Makona-G3818_KM233092                    3.09%    passed     99.98%
+  57  EBOV_H.sap-wt_SLE_14_Makona-NM042.1_KM233116                  3.09%    passed     99.98%
+  58  EBOV_H.sap-wt_SLE_14_Makona-G3770.2_KM233070                  3.09%    passed     99.98%
+  59  EBOV_H.sap-wt_SLE_14_Makona-J0093_KP759760                    3.09%    passed     99.98%
+  60  EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0080_KP759749           3.09%    passed     99.98%
+  61  EBOV_H.sap-wt_SLE_14_Makona-J0117_KP759665                    3.09%    passed     99.98%
+  62  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5685_1_KR105317           3.09%    passed     99.99%
+  63  EBOV_H.sap-wt_SLE_14_Makona-Kenema-20140590_KR653278          3.09%    passed     99.98%
+  64  EBOV_H.sap-wt_SLE_14_Makona-G3825.1_KM233098                  3.09%    passed     99.98%
+  65  EBOV_H.sap-wt_SLE_14_Makona-Kailahun-G4255_1_KR105226         3.09%    passed     99.99%
+  66  EBOV_H.sap-wt_SLE_14_Makona-Koinadugu-20143659_KR653256       3.09%    passed     99.94%
+  67  EBOV_H.sap-wt_SLE_14_Makona-J0128_KP759677                    3.09%    passed     99.99%
+  68  EBOV_H.sap-wt_SLE_14_Makona-J0119_KP759667                    3.09%    passed     99.97%
+  69  EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0083_KP759752           3.09%    passed     99.80%
+  70  EBOV_H.sap-wt_SLE_14_Makona-J0158_KP759700                    3.09%    passed     99.96%
+  71  EBOV_H.sap-wt_SLE_14_Makona-PortLoko-20140024_KR653252        3.09%    passed     99.96%
+  72  EBOV_H.sap-wt_SLE_14_Makona-G4748_1_KR105270                  3.09%    passed     99.94%
+  73  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4730_1_KR105268           3.09%    passed     99.91%
+  74  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5039_1_KR105295           3.09%    passed     99.94%
+  75  EBOV_H.sap-wt_SLE_14_Makona-G5296_1_KR105303                  3.09%    passed     99.97%
+  76  EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757            3.09%    passed     99.96%
+  77  EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754            3.09%    passed     99.96%
+  78  EBOV_H.sap-wt_SLE_14_Makona-G4994_1_KR105289                  3.09%    passed     99.94%
+  79  EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE6_KR075000             3.09%    passed     99.99%
+  80  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_000982_KR817086        3.09%    passed    100.00%
+  81  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_076138_KR817140      3.09%    passed     99.98%
+  82  EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074353_KR817112           3.09%    passed     99.96%
+  83  EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074350_KR817109           3.09%    passed     99.98%
+  84  EBOV_H.sap-wt_GIN_15_Makona-Faranah-EM_004503_KR817102        3.09%    passed     99.96%
+  85  EBOV_H.sap-wt_GIN_15_Makona-Kissidougou-EM_004555_KR817103    3.09%    passed     99.96%
+  86  EBOV_H.sap-wt_LBR_14_Makona-EM_080065_KR817232                3.09%    passed     99.96%
+  87  EBOV_H.sap-wt_GIN_14_Makona-Nzerekore-EM_074437_KR817117      3.09%    passed     99.98%
+  88  EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074720_KR817125           3.09%    passed     99.89%
+  89  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076322_KR817145        3.09%    passed     99.97%
+  90  EBOV_H.sap-wt_SLE_14_Makona-G3676.1_KM034554                  3.09%    passed     99.99%
+  91  EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421            3.09%    passed     99.99%
+  92  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256            3.09%    passed     99.99%
+  93  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079422_KR817187        3.09%    passed     99.99%
+  94  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079424_KR817189        3.09%    passed     99.99%
+  95  EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C05_KP096420            3.09%    passed     99.86%
+  96  EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-C15_KT013254          3.09%    passed     99.86%
+  97  EBOV_H.sap-xx_COD_14_Lomela-Lokolia16_KP271018                3.12%    passed     97.72%
+  98  EBOV_H.sap-xx_COD_14_Lomela-Lokolia17_KP271019                3.12%    passed     98.22%
+  99  EBOV_H.sap-tc_COD_95_Kikwit-9510621_KR867676                  3.12%    passed     97.10%
+ 100  EBOV_H.sap-tc_COD_77_Bonduni_KC242791                         3.12%    passed     95.95%
+****  TOTAL                                                         3.17%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: SUDV_H.sap-xx_UGA_12_EboSud-609_KC545391 is identical to SUDV_H.sap-xx_UGA_12_EboSud-603_KC545390 but kept for subsequent analysis
+NOTE: EBOV_H.sap-tc_COD_07_M-M_HQ613403 is identical to EBOV_H.sap-tc_COD_07_1Luebo_KC242786 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175 is identical to EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-G3677.2_KM034557 is identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708 is identical to EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0080_KP759749 is identical to EBOV_H.sap-wt_SLE_14_Makona-J0093_KP759760 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754 is identical to EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_GIN_15_Makona-Kissidougou-EM_004555_KR817103 is identical to EBOV_H.sap-wt_GIN_15_Makona-Faranah-EM_004503_KR817102 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256 is identical to EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421 but kept for subsequent analysis
+NOTE: 10 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4971_1_KR105284 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4937_1_KR105278 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-G3735.2_KM233057 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-EM124.3_KM233047 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-G3840_KM233106 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-EM110_KM233037 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-NM042.1_KM233116 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-G3770.2_KM233070 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ebolaTrueMSA.fasta.uniqueseq.phy
+Reading input tree file ../fast.tre ...
+
+NOTE: 38 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 4 CPU cores
+Increase to 10 rounds for branch lengths
+14 trees examined
+Threads: 1 / Time: 4.270 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -186926
+Threads: 2 / Time: 2.275 sec / Speedup: 1.877 / Efficiency: 94% / LogL: -186926
+Threads: 3 / Time: 1.693 sec / Speedup: 2.523 / Efficiency: 84% / LogL: -186926
+Threads: 4 / Time: 1.448 sec / Speedup: 2.949 / Efficiency: 74% / LogL: -186926
+BEST NUMBER OF THREADS: 4
+
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -122581.512
+2. Current log-likelihood: -118751.160
+3. Current log-likelihood: -118702.547
+4. Current log-likelihood: -118690.828
+5. Current log-likelihood: -118686.208
+6. Current log-likelihood: -118684.265
+7. Current log-likelihood: -118683.265
+8. Current log-likelihood: -118682.665
+9. Current log-likelihood: -118682.265
+10. Current log-likelihood: -118681.981
+11. Current log-likelihood: -118681.760
+12. Current log-likelihood: -118681.571
+13. Current log-likelihood: -118681.440
+14. Current log-likelihood: -118681.323
+15. Current log-likelihood: -118681.222
+16. Current log-likelihood: -118681.132
+17. Current log-likelihood: -118681.054
+18. Current log-likelihood: -118680.986
+19. Current log-likelihood: -118680.930
+20. Current log-likelihood: -118680.876
+21. Current log-likelihood: -118680.833
+22. Current log-likelihood: -118680.730
+23. Current log-likelihood: -118680.682
+24. Current log-likelihood: -118680.651
+25. Current log-likelihood: -118680.625
+26. Current log-likelihood: -118680.600
+27. Current log-likelihood: -118680.576
+28. Current log-likelihood: -118680.553
+29. Current log-likelihood: -118680.533
+30. Current log-likelihood: -118680.508
+31. Current log-likelihood: -118680.489
+32. Current log-likelihood: -118680.470
+33. Current log-likelihood: -118680.450
+34. Current log-likelihood: -118680.430
+35. Current log-likelihood: -118680.411
+36. Current log-likelihood: -118680.394
+37. Current log-likelihood: -118680.375
+38. Current log-likelihood: -118680.359
+39. Current log-likelihood: -118680.341
+40. Current log-likelihood: -118680.325
+41. Current log-likelihood: -118680.307
+42. Current log-likelihood: -118680.292
+43. Current log-likelihood: -118680.274
+44. Current log-likelihood: -118680.259
+45. Current log-likelihood: -118680.242
+46. Current log-likelihood: -118680.227
+47. Current log-likelihood: -118680.212
+48. Current log-likelihood: -118680.196
+49. Current log-likelihood: -118680.182
+50. Current log-likelihood: -118680.168
+51. Current log-likelihood: -118680.155
+52. Current log-likelihood: -118680.139
+53. Current log-likelihood: -118680.126
+54. Current log-likelihood: -118680.112
+55. Current log-likelihood: -118680.099
+56. Current log-likelihood: -118680.086
+57. Current log-likelihood: -118680.073
+58. Current log-likelihood: -118680.060
+59. Current log-likelihood: -118680.047
+60. Current log-likelihood: -118680.034
+61. Current log-likelihood: -118680.022
+62. Current log-likelihood: -118680.009
+63. Current log-likelihood: -118679.996
+64. Current log-likelihood: -118679.984
+65. Current log-likelihood: -118679.972
+66. Current log-likelihood: -118679.959
+67. Current log-likelihood: -118679.947
+68. Current log-likelihood: -118679.934
+69. Current log-likelihood: -118679.922
+70. Current log-likelihood: -118679.910
+71. Current log-likelihood: -118679.899
+72. Current log-likelihood: -118679.887
+73. Current log-likelihood: -118679.875
+74. Current log-likelihood: -118679.864
+75. Current log-likelihood: -118679.852
+76. Current log-likelihood: -118679.840
+77. Current log-likelihood: -118679.829
+78. Current log-likelihood: -118679.818
+79. Current log-likelihood: -118679.807
+80. Current log-likelihood: -118679.794
+81. Current log-likelihood: -118679.783
+82. Current log-likelihood: -118679.772
+83. Current log-likelihood: -118679.761
+84. Current log-likelihood: -118679.750
+85. Current log-likelihood: -118679.739
+86. Current log-likelihood: -118679.728
+87. Current log-likelihood: -118679.717
+88. Current log-likelihood: -118679.706
+89. Current log-likelihood: -118679.695
+90. Current log-likelihood: -118679.684
+91. Current log-likelihood: -118679.674
+92. Current log-likelihood: -118679.663
+93. Current log-likelihood: -118679.652
+94. Current log-likelihood: -118679.642
+95. Current log-likelihood: -118679.631
+96. Current log-likelihood: -118679.620
+Optimal log-likelihood: -118679.610
+Rate parameters:  A-C: 1.75230  A-G: 5.53487  A-T: 0.77590  C-G: 0.48222  C-T: 7.33514  G-T: 1.00000
+Base frequencies:  A: 0.322  C: 0.214  G: 0.198  T: 0.267
+Proportion of invariable sites: 0.265
+Site proportion and rates:  (0.126,0.205) (0.181,0.674) (0.188,1.148) (0.240,2.653)
+Parameters optimization took 96 rounds (16.628 sec)
+BEST SCORE FOUND : -118679.610
+Total tree length: 4.378
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 84.539 sec (0h:1m:24s)
+Total wall-clock time used: 26.331 sec (0h:0m:26s)
+
+Analysis results written to: 
+  IQ-TREE report:                ebolaTrueMSA.fasta.iqtree
+  Maximum-likelihood tree:       ebolaTrueMSA.fasta.treefile
+  Screen log file:               ebolaTrueMSA.fasta.log
+
+Date and Time: Wed Aug 26 20:13:15 2020

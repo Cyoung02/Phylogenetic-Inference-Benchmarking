@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+
+for ((i=0; i < 10; i++))
+do
+    cd hiv$i/MAFFT/FastTree
+    mkdir IQTree IQTreeMFP PhyML RAxML 
+
+    cd IQTree
+    cp ../../../trueData/hivTrueMSA.fasta .
+    iqtree -m GTR+I+R -s hivTrueMSA.fasta -nt AUTO -te ../fast.tre
+
+    cd ../IQTreeMFP
+    cp ../../../trueData/hivTrueMSA.fasta .
+    iqtree -m MFP -s hivTrueMSA.fasta -nt AUTO -te ../fast.tre
+
+    cd ../RAxML
+    cp ../../../trueData/hivTrueMSA.fasta .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    raxml-ng --msa hivTrueMSA.fasta --model GTR+I+G --evaluate --tree resolved.tre
+
+    cd ../PhyML
+    cp ../../../trueData/hivTrueMSA.phy .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    phyml -i hivTrueMSA.phy -a e -d nt -m GTR --no_memory_check -o lr -u resolved.tre
+
+    cd ../../../../
+done
+for ((i=0; i < 10; i++))
+do
+    cd hiv$i/MUSCLE/FastTree
+    mkdir IQTree IQTreeMFP PhyML RAxML 
+
+    cd IQTree
+    cp ../../../trueData/hivTrueMSA.fasta .
+    iqtree -m GTR+I+R -s hivTrueMSA.fasta -nt AUTO -te ../fast.tre
+
+    cd ../IQTreeMFP
+    cp ../../../trueData/hivTrueMSA.fasta .
+    iqtree -m MFP -s hivTrueMSA.fasta -nt AUTO -te ../fast.tre
+
+    cd ../RAxML
+    cp ../../../trueData/hivTrueMSA.fasta .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    raxml-ng --msa hivTrueMSA.fasta --model GTR+I+G --evaluate --tree resolved.tre
+
+    cd ../PhyML
+    cp ../../../trueData/hivTrueMSA.phy .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    phyml -i hivTrueMSA.phy -a e -d nt -m GTR --no_memory_check -o lr -u resolved.tre
+
+    cd ../../../../
+done
+for ((i=0; i < 10; i++))
+do
+    cd hiv$i/ClustalOmega/FastTree
+    mkdir IQTree IQTreeMFP PhyML RAxML 
+
+    cd IQTree
+    cp ../../../trueData/hivTrueMSA.fasta .
+    iqtree -m GTR+I+R -s hivTrueMSA.fasta -nt AUTO -te ../fast.tre
+
+    cd ../IQTreeMFP
+    cp ../../../trueData/hivTrueMSA.fasta .
+    iqtree -m MFP -s hivTrueMSA.fasta -nt AUTO -te ../fast.tre
+
+    cd ../RAxML
+    cp ../../../trueData/hivTrueMSA.fasta .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    raxml-ng --msa hivTrueMSA.fasta --model GTR+I+G --evaluate --tree resolved.tre
+
+    cd ../PhyML
+    cp ../../../trueData/hivTrueMSA.phy .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    phyml -i hivTrueMSA.phy -a e -d nt -m GTR --no_memory_check -o lr -u resolved.tre
+
+    cd ../../../../
+done

@@ -1,0 +1,346 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    colin-System-Product-Name (AVX2, FMA3, 15 GB RAM)
+Command: iqtree -m MFP -s ebolaTrueMSA.fasta -nt AUTO -te ../fast.tre
+Seed:    482732 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Aug 26 19:33:39 2020
+Kernel:  AVX+FMA - auto-detect threads (4 CPU cores detected)
+
+Reading alignment file ebolaTrueMSA.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 100 sequences with 20064 columns, 3272 distinct patterns
+11850 parsimony-informative, 1015 singleton sites, 7199 constant sites
+                                                            Gap/Ambiguity  Composition  p-value
+   1  RESTV_M.fas-tc_USA_89_Philippines89-Pennsylvania_NC_004161    2.11%    passed     82.53%
+   2  RESTV_S.dom-tc_PHL_08_Reston08-A_FJ621583                     2.11%    passed     80.33%
+   3  RESTV_S.dom-xx_PHL_08_Reston08-C_FJ621584                     2.10%    passed     69.42%
+   4  SUDV_H.sap-xx_UGA_12_EboSud-603_KC545390                      2.50%    passed     23.61%
+   5  SUDV_H.sap-xx_UGA_12_EboSud-609_KC545391                      2.50%    passed     23.91%
+   6  TAFV_H.sap-tc_CIV_94_Pauleoula-CI_NC_014372                   3.62%    passed     78.07%
+   7  BDBV_H.sap-xx_COD_12_EboBund-122_KC545395                     2.99%    passed     18.07%
+   8  EBOV_H.sap-tc_COD_07_1Luebo_KC242786                          3.46%    passed     99.75%
+   9  EBOV_H.sap-tc_COD_07_M-M_HQ613403                             3.46%    passed     99.63%
+  10  EBOV_H.sap-tc_COD_07_5Luebo_KC242790                          3.46%    passed     99.52%
+  11  EBOV_H.sap-tc_COD_08_034-KS_HQ613402                          3.46%    passed     99.53%
+  12  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_080076_KR817235      3.46%    passed     99.90%
+  13  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079702_KR817210      3.46%    passed     99.92%
+  14  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079587_KR817202      3.46%    passed     99.83%
+  15  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079750_KR817213      3.46%    passed     99.98%
+  16  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079910_KR817221      3.46%    passed     99.94%
+  17  EBOV_H.sap-wt_LBR_14_Makona-LIBR0430_KR006955                 3.46%    passed     99.97%
+  18  EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055                  3.46%    passed     99.97%
+  19  EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE4_KR074998             3.46%    passed     99.99%
+  20  EBOV_H.sap-wt_GIN_14_Makona-Kankan-EM_078639_KR817166         3.46%    passed     99.96%
+  21  EBOV_H.sap-wt_GIN_14_Makona-Faranah-EM_078415_KR817160        3.46%    passed     99.87%
+  22  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076191_KR817141        3.46%    passed     99.94%
+  23  EBOV_H.sap-wt_GIN_14_Makona-Beyla-EM_075931_KR817138          3.46%    passed     99.96%
+  24  EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171    3.46%    passed     99.87%
+  25  EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175    3.46%    passed     99.87%
+  26  EBOV_H.sap-wt_LBR_14_Makona-LIBR0505_KR006957                 3.46%    passed     99.98%
+  27  EBOV_H.sap-wt_SLE_14_Makona-Kailahun-20140517_KR653263        3.47%    passed     99.99%
+  28  EBOV_H.sap-wt_SLE_14_Makona-G4973_1_KR105286                  3.47%    passed     99.99%
+  29  EBOV_H.sap-wt_SLE_14_Makona-G3799_KM233080                    3.46%    passed     99.96%
+  30  EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075                    3.46%    passed     99.96%
+  31  EBOV_H.sap-wt_SLE_14_Makona-G3677.2_KM034557                  3.46%    passed     99.97%
+  32  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5059_1_KR105296           3.46%    passed     99.98%
+  33  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4702_1_KR105265           3.46%    passed     99.99%
+  34  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242           3.46%    passed     99.99%
+  35  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4971_1_KR105284           3.46%    passed     99.97%
+  36  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4937_1_KR105278           3.46%    passed     99.98%
+  37  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4856_1_KR105273           3.46%    passed     99.97%
+  38  EBOV_H.sap-wt_SLE_14_Makona-Bonthe-G5723_1_KR105319           3.46%    passed     99.98%
+  39  EBOV_H.sap-wt_SLE_14_Makona-J0042_KP759711                    3.46%    passed     99.98%
+  40  EBOV_H.sap-wt_SLE_14_Makona-J0150_KP759696                    3.46%    passed     99.90%
+  41  EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707                    3.46%    passed    100.00%
+  42  EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708                    3.46%    passed    100.00%
+  43  EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G6103_1_KR105348          3.46%    passed     99.99%
+  44  EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076                  3.46%    passed     99.97%
+  45  EBOV_H.sap-wt_SLE_14_Makona-J0054_KP759722                    3.46%    passed     99.99%
+  46  EBOV_H.sap-wt_SLE_14_Makona-G5640_1_KR105313                  3.46%    passed     99.91%
+  47  EBOV_H.sap-wt_SLE_14_Makona-G3735.2_KM233057                  3.46%    passed     99.97%
+  48  EBOV_H.sap-wt_SLE_14_Makona-EM124.3_KM233047                  3.46%    passed     99.97%
+  49  EBOV_H.sap-wt_SLE_14_Makona-G3949_1_KR105209                  3.46%    passed     99.98%
+  50  EBOV_H.sap-wt_SLE_14_Makona-G3827_KM233101                    3.46%    passed     99.97%
+  51  EBOV_H.sap-wt_SLE_14_Makona-G3840_KM233106                    3.46%    passed     99.97%
+  52  EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5763_1_KR105325          3.46%    passed     99.98%
+  53  EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5844_1_KR105328          3.46%    passed     99.98%
+  54  EBOV_H.sap-wt_SLE_14_Makona-EM110_KM233037                    3.46%    passed     99.96%
+  55  EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118                  3.46%    passed     99.97%
+  56  EBOV_H.sap-wt_SLE_14_Makona-G3818_KM233092                    3.46%    passed     99.97%
+  57  EBOV_H.sap-wt_SLE_14_Makona-NM042.1_KM233116                  3.46%    passed     99.97%
+  58  EBOV_H.sap-wt_SLE_14_Makona-G3770.2_KM233070                  3.46%    passed     99.96%
+  59  EBOV_H.sap-wt_SLE_14_Makona-J0093_KP759760                    3.46%    passed     99.99%
+  60  EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0080_KP759749           3.46%    passed     99.99%
+  61  EBOV_H.sap-wt_SLE_14_Makona-J0117_KP759665                    3.46%    passed     99.99%
+  62  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5685_1_KR105317           3.46%    passed     99.98%
+  63  EBOV_H.sap-wt_SLE_14_Makona-Kenema-20140590_KR653278          3.46%    passed     99.99%
+  64  EBOV_H.sap-wt_SLE_14_Makona-G3825.1_KM233098                  3.46%    passed     99.98%
+  65  EBOV_H.sap-wt_SLE_14_Makona-Kailahun-G4255_1_KR105226         3.46%    passed     99.98%
+  66  EBOV_H.sap-wt_SLE_14_Makona-Koinadugu-20143659_KR653256       3.46%    passed    100.00%
+  67  EBOV_H.sap-wt_SLE_14_Makona-J0128_KP759677                    3.46%    passed     99.98%
+  68  EBOV_H.sap-wt_SLE_14_Makona-J0119_KP759667                    3.46%    passed     99.91%
+  69  EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0083_KP759752           3.46%    passed     99.97%
+  70  EBOV_H.sap-wt_SLE_14_Makona-J0158_KP759700                    3.46%    passed     99.96%
+  71  EBOV_H.sap-wt_SLE_14_Makona-PortLoko-20140024_KR653252        3.46%    passed     99.98%
+  72  EBOV_H.sap-wt_SLE_14_Makona-G4748_1_KR105270                  3.46%    passed     99.97%
+  73  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4730_1_KR105268           3.46%    passed     99.88%
+  74  EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5039_1_KR105295           3.46%    passed     99.96%
+  75  EBOV_H.sap-wt_SLE_14_Makona-G5296_1_KR105303                  3.46%    passed     99.98%
+  76  EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757            3.46%    passed     99.99%
+  77  EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754            3.46%    passed     99.99%
+  78  EBOV_H.sap-wt_SLE_14_Makona-G4994_1_KR105289                  3.46%    passed     99.98%
+  79  EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE6_KR075000             3.46%    passed     99.93%
+  80  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_000982_KR817086        3.46%    passed     99.99%
+  81  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_076138_KR817140      3.46%    passed     99.97%
+  82  EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074353_KR817112           3.46%    passed     99.97%
+  83  EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074350_KR817109           3.46%    passed     99.96%
+  84  EBOV_H.sap-wt_GIN_15_Makona-Faranah-EM_004503_KR817102        3.46%    passed     99.95%
+  85  EBOV_H.sap-wt_GIN_15_Makona-Kissidougou-EM_004555_KR817103    3.46%    passed     99.93%
+  86  EBOV_H.sap-wt_LBR_14_Makona-EM_080065_KR817232                3.46%    passed     99.96%
+  87  EBOV_H.sap-wt_GIN_14_Makona-Nzerekore-EM_074437_KR817117      3.46%    passed     99.97%
+  88  EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074720_KR817125           3.46%    passed     99.90%
+  89  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076322_KR817145        3.46%    passed     99.96%
+  90  EBOV_H.sap-wt_SLE_14_Makona-G3676.1_KM034554                  3.46%    passed     99.93%
+  91  EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421            3.46%    passed     99.94%
+  92  EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256            3.46%    passed     99.94%
+  93  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079422_KR817187        3.46%    passed     99.96%
+  94  EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079424_KR817189        3.46%    passed     99.93%
+  95  EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C05_KP096420            3.46%    passed     99.92%
+  96  EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-C15_KT013254          3.46%    passed     99.85%
+  97  EBOV_H.sap-xx_COD_14_Lomela-Lokolia16_KP271018                3.46%    passed     96.79%
+  98  EBOV_H.sap-xx_COD_14_Lomela-Lokolia17_KP271019                3.46%    passed     96.77%
+  99  EBOV_H.sap-tc_COD_95_Kikwit-9510621_KR867676                  3.46%    passed     98.44%
+ 100  EBOV_H.sap-tc_COD_77_Bonduni_KC242791                         3.46%    passed     96.29%
+****  TOTAL                                                         3.40%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175 is identical to EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708 is identical to EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-G3735.2_KM233057 is identical to EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754 is identical to EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757 but kept for subsequent analysis
+NOTE: EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256 is identical to EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421 but kept for subsequent analysis
+NOTE: 4 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-EM124.3_KM233047 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-G3840_KM233106 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076) is ignored but added at the end
+NOTE: EBOV_H.sap-wt_SLE_14_Makona-NM042.1_KM233116 (identical to EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ebolaTrueMSA.fasta.uniqueseq.phy
+
+Reading input tree file ../fast.tre ...
+NOTE: ModelFinder requires 101 MB RAM!
+ModelFinder will test 286 DNA models (sample size: 20064) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Measuring multi-threading efficiency up to 4 CPU cores
+Increase to 10 rounds for branch lengths
+46 trees examined
+Threads: 1 / Time: 4.009 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -218617
+Threads: 2 / Time: 3.117 sec / Speedup: 1.286 / Efficiency: 64% / LogL: -218617
+Threads: 3 / Time: 2.256 sec / Speedup: 1.777 / Efficiency: 59% / LogL: -218617
+Threads: 4 / Time: 2.008 sec / Speedup: 1.997 / Efficiency: 50% / LogL: -218617
+BEST NUMBER OF THREADS: 3
+
+  1  JC            126091.831   189 252561.663   252565.277   254056.026
+  2  JC+I          122993.152   190 246366.305   246369.957   247868.575
+  3  JC+G4         123083.243   190 246546.486   246550.139   248048.756
+  4  JC+I+G4       122938.256   191 246258.511   246262.202   247768.687
+  5  JC+R2         123349.647   191 247081.295   247084.986   248591.471
+  6  JC+R3         122965.712   193 246317.424   246321.193   247843.414
+  7  JC+R4         122942.938   195 246275.876   246279.723   247817.679
+  8  JC+R5         122937.837   197 246269.674   246273.601   247827.291
+ 14  F81+F         125437.623   192 251259.247   251262.976   252777.330
+ 15  F81+F+I       122237.692   193 244861.384   244865.152   246387.373
+ 16  F81+F+G4      122326.586   193 245039.171   245042.940   246565.161
+ 17  F81+F+I+G4    122181.487   194 244750.975   244754.783   246284.871
+ 18  F81+F+R2      122517.672   194 245423.344   245427.152   246957.241
+ 19  F81+F+R3      122184.307   196 244760.614   244764.501   246310.324
+ 20  F81+F+R4      122180.734   198 244757.468   244761.435   246322.991
+ 27  K2P           123794.068   190 247968.137   247971.789   249470.407
+ 28  K2P+I         120230.079   191 240842.158   240845.849   242352.334
+ 29  K2P+G4        120200.961   191 240783.922   240787.613   242294.098
+ 30  K2P+I+G4      120043.833   192 240471.666   240475.395   241989.749
+ 31  K2P+R2        120408.129   192 241200.258   241203.988   242718.341
+ 32  K2P+R3        120049.153   194 240486.305   240490.113   242020.202
+ 33  K2P+R4        120047.671   196 240487.342   240491.229   242037.052
+ 40  HKY+F         122885.575   193 246157.149   246160.918   247683.139
+ 41  HKY+F+I       119155.336   194 238698.673   238702.481   240232.569
+ 42  HKY+F+G4      119152.662   194 238693.325   238697.133   240227.221
+ 43  HKY+F+I+G4    118961.804   195 238313.607   238317.455   239855.410
+ 44  HKY+F+R2      119314.817   195 239019.635   239023.482   240561.438
+ 45  HKY+F+R3      118968.268   197 238330.537   238334.464   239888.153
+ 46  HKY+F+R4      118968.112   199 238334.224   238338.231   239907.654
+ 53  TNe           123774.622   191 247931.245   247934.935   249441.421
+ 54  TNe+I         120214.291   192 240812.582   240816.311   242330.665
+ 55  TNe+G4        120190.749   192 240765.498   240769.227   242283.581
+ 56  TNe+I+G4      120031.375   193 240448.750   240452.518   241974.739
+ 57  TNe+R2        120238.460   193 240862.919   240866.688   242388.909
+ 58  TNe+R3        120033.816   195 240457.632   240461.480   241999.436
+ 59  TNe+R4        120033.759   197 240461.519   240465.446   242019.135
+ 66  TN+F          122855.772   194 246099.543   246103.351   247633.440
+ 67  TN+F+I        119135.162   195 238660.324   238664.172   240202.128
+ 68  TN+F+G4       119133.671   195 238657.341   238661.189   240199.144
+ 69  TN+F+I+G4     118942.836   196 238277.672   238281.559   239827.381
+ 70  TN+F+R2       119168.867   196 238729.734   238733.621   240279.444
+ 71  TN+F+R3       118947.319   198 238290.638   238294.605   239856.161
+ 72  TN+F+R4       118947.272   200 238294.544   238298.591   239875.880
+ 79  K3P           123784.338   191 247950.676   247954.367   249460.853
+ 80  K3P+I         120195.659   192 240775.318   240779.048   242293.401
+ 81  K3P+G4        120166.972   192 240717.943   240721.673   242236.026
+ 82  K3P+I+G4      120004.893   193 240395.786   240399.554   241921.775
+ 83  K3P+R2        120133.583   193 240653.165   240656.934   242179.155
+ 84  K3P+R3        120007.426   195 240404.852   240408.700   241946.656
+ 85  K3P+R4        120007.370   197 240408.740   240412.667   241966.356
+ 92  K3Pu+F        122844.787   194 246077.574   246081.382   247611.470
+ 93  K3Pu+F+I      119086.269   195 238562.539   238566.386   240104.342
+ 94  K3Pu+F+G4     119081.079   195 238552.158   238556.006   240093.961
+ 95  K3Pu+F+I+G4   118884.223   196 238160.445   238164.332   239710.155
+ 96  K3Pu+F+R2     119045.440   196 238482.880   238486.767   240032.590
+ 97  K3Pu+F+R3     118886.302   198 238168.604   238172.571   239734.128
+ 98  K3Pu+F+R4     118886.234   200 238172.468   238176.515   239753.804
+105  TPM2+F        122863.365   194 246114.731   246118.539   247648.627
+106  TPM2+F+I      119123.269   195 238636.537   238640.385   240178.340
+107  TPM2+F+G4     119121.608   195 238633.216   238637.063   240175.019
+108  TPM2+F+I+G4   118931.674   196 238255.349   238259.236   239805.059
+109  TPM2+F+R2     119058.198   196 238508.396   238512.283   240058.106
+110  TPM2+F+R3     118934.084   198 238264.167   238268.134   239829.690
+111  TPM2+F+R4     118933.896   200 238267.793   238271.840   239849.129
+118  TPM2u+F       122863.752   194 246115.504   246119.312   247649.400
+119  TPM2u+F+I     119123.655   195 238637.310   238641.158   240179.113
+120  TPM2u+F+G4    119122.009   195 238634.017   238637.865   240175.820
+121  TPM2u+F+I+G4  118931.950   196 238255.899   238259.786   239805.609
+122  TPM2u+F+R2    119041.552   196 238475.104   238478.991   240024.813
+123  TPM2u+F+R3    118934.077   198 238264.155   238268.122   239829.678
+124  TPM2u+F+R4    118933.898   200 238267.797   238271.845   239849.133
+131  TPM3+F        122865.252   194 246118.505   246122.313   247652.401
+132  TPM3+F+I      119125.614   195 238641.228   238645.075   240183.031
+133  TPM3+F+G4     119121.128   195 238632.255   238636.103   240174.058
+134  TPM3+F+I+G4   118926.621   196 238245.241   238249.128   239794.951
+135  TPM3+F+R2     119029.225   196 238450.449   238454.336   240000.159
+136  TPM3+F+R3     118928.383   198 238252.767   238256.734   239818.290
+137  TPM3+F+R4     118926.847   200 238253.695   238257.743   239835.031
+144  TPM3u+F       122864.207   194 246116.413   246120.221   247650.310
+145  TPM3u+F+I     119124.571   195 238639.142   238642.990   240180.946
+146  TPM3u+F+G4    119119.953   195 238629.906   238633.753   240171.709
+147  TPM3u+F+I+G4  118925.636   196 238243.271   238247.158   239792.981
+148  TPM3u+F+R2    119017.154   196 238426.307   238430.194   239976.017
+149  TPM3u+F+R3    118926.986   198 238249.973   238253.940   239815.496
+150  TPM3u+F+R4    118926.750   200 238253.501   238257.548   239834.837
+157  TIMe          123763.796   192 247911.593   247915.322   249429.676
+158  TIMe+I        120178.335   193 240742.671   240746.439   242268.660
+159  TIMe+G4       120155.610   193 240697.221   240700.989   242223.210
+160  TIMe+I+G4     119991.082   194 240370.164   240373.972   241904.060
+161  TIMe+R2       120045.742   194 240479.484   240483.292   242013.380
+162  TIMe+R3       119992.217   196 240376.435   240380.322   241926.144
+163  TIMe+R4       119992.176   198 240380.353   240384.320   241945.876
+170  TIM+F         122814.048   195 246018.095   246021.943   247559.898
+171  TIM+F+I       119065.916   196 238523.831   238527.718   240073.541
+172  TIM+F+G4      119061.803   196 238515.605   238519.492   240065.315
+173  TIM+F+I+G4    118865.364   197 238124.729   238128.656   239682.345
+174  TIM+F+R2      118947.395   197 238288.789   238292.716   239846.406
+175  TIM+F+R3      118867.195   199 238132.390   238136.397   239705.820
+176  TIM+F+R4      118867.167   201 238136.335   238140.423   239725.578
+183  TIM2e         123622.842   192 247629.683   247633.413   249147.766
+184  TIM2e+I       120084.720   193 240555.440   240559.208   242081.429
+185  TIM2e+G4      119988.672   193 240363.344   240367.113   241889.334
+186  TIM2e+I+G4    119860.244   194 240108.489   240112.297   241642.385
+187  TIM2e+R2      119914.599   194 240217.199   240221.007   241751.095
+188  TIM2e+R3      119862.744   196 240117.488   240121.375   241667.198
+189  TIM2e+R4      119862.697   198 240121.395   240125.362   241686.918
+196  TIM2+F        122835.039   195 246060.079   246063.926   247601.882
+197  TIM2+F+I      119105.745   196 238603.491   238607.378   240153.201
+198  TIM2+F+G4     119101.832   196 238595.664   238599.551   240145.374
+199  TIM2+F+I+G4   118913.269   197 238220.538   238224.465   239778.154
+200  TIM2+F+R2     118982.703   197 238359.406   238363.333   239917.022
+201  TIM2+F+R3     118915.095   199 238228.190   238232.197   239801.620
+202  TIM2+F+R4     118914.935   201 238231.871   238235.959   239821.114
+209  TIM3e         123774.592   192 247933.184   247936.913   249451.267
+210  TIM3e+I       120209.966   193 240805.931   240809.700   242331.921
+211  TIM3e+G4      120190.232   193 240766.465   240770.234   242292.455
+212  TIM3e+I+G4    120028.949   194 240445.898   240449.706   241979.794
+213  TIM3e+R2      120075.431   194 240538.863   240542.670   242072.759
+214  TIM3e+R3      120029.633   196 240451.265   240455.152   242000.975
+215  TIM3e+R4      120029.625   198 240455.250   240459.217   242020.774
+222  TIM3+F        122835.085   195 246060.169   246064.017   247601.972
+223  TIM3+F+I      119105.030   196 238602.060   238605.947   240151.770
+224  TIM3+F+G4     119100.839   196 238593.677   238597.564   240143.387
+225  TIM3+F+I+G4   118906.538   197 238207.076   238211.003   239764.693
+226  TIM3+F+R2     118974.524   197 238343.049   238346.976   239900.665
+227  TIM3+F+R3     118908.644   199 238215.288   238219.295   239788.718
+228  TIM3+F+R4     118908.409   201 238218.817   238222.906   239808.061
+235  TVMe          123622.284   193 247630.568   247634.337   249156.558
+236  TVMe+I        120060.367   194 240508.733   240512.541   242042.630
+237  TVMe+G4       119951.426   194 240290.853   240294.661   241824.749
+238  TVMe+I+G4     119823.259   195 240036.518   240040.365   241578.321
+239  TVMe+R2       119870.252   195 240130.504   240134.351   241672.307
+240  TVMe+R3       119823.011   197 240040.023   240043.950   241597.639
+241  TVMe+R4       119822.963   199 240043.925   240047.932   241617.355
+248  TVM+F         122805.166   196 246002.332   246006.219   247552.042
+249  TVM+F+I       119028.304   197 238450.608   238454.535   240008.224
+250  TVM+F+G4      119026.750   197 238447.499   238451.426   240005.116
+251  TVM+F+I+G4    118828.734   198 238053.468   238057.435   239618.991
+252  TVM+F+R2      118896.291   198 238188.581   238192.548   239754.104
+253  TVM+F+R3      118832.165   200 238064.330   238068.378   239645.666
+254  TVM+F+R4      118832.088   202 238068.177   238072.306   239665.327
+261  SYM           123599.592   194 247587.184   247590.992   249121.081
+262  SYM+I         120038.394   195 240466.788   240470.636   242008.591
+263  SYM+G4        119938.019   195 240266.039   240269.886   241807.842
+264  SYM+I+G4      119807.438   196 240006.876   240010.763   241556.586
+265  SYM+R2        119862.308   196 240116.616   240120.503   241666.326
+266  SYM+R3        119809.276   198 240014.552   240018.519   241580.075
+267  SYM+R4        119809.268   200 240018.535   240022.583   241599.872
+274  GTR+F         122776.402   197 245946.804   245950.731   247504.420
+275  GTR+F+I       119010.193   198 238416.387   238420.354   239981.910
+276  GTR+F+G4      119005.897   198 238407.794   238411.761   239973.317
+277  GTR+F+I+G4    118808.884   199 238015.768   238019.775   239589.198
+278  GTR+F+R2      118879.459   199 238156.918   238160.925   239730.347
+279  GTR+F+R3      118813.009   201 238028.018   238032.107   239617.261
+280  GTR+F+R4      118812.901   203 238031.803   238035.973   239636.859
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: GTR+F+I+G4
+Bayesian Information Criterion:         GTR+F+I+G4
+Best-fit model: GTR+F+I+G4 chosen according to BIC
+
+All model information printed to ebolaTrueMSA.fasta.model.gz
+CPU time for ModelFinder: 504.882 seconds (0h:8m:24s)
+Wall-clock time for ModelFinder: 172.010 seconds (0h:2m:52s)
+
+NOTE: 40 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 4 CPU cores
+Increase to 10 rounds for branch lengths
+13 trees examined
+Threads: 1 / Time: 4.094 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -187608
+Threads: 2 / Time: 2.639 sec / Speedup: 1.551 / Efficiency: 78% / LogL: -187608
+Threads: 3 / Time: 2.153 sec / Speedup: 1.901 / Efficiency: 63% / LogL: -187608
+Threads: 4 / Time: 1.912 sec / Speedup: 2.141 / Efficiency: 54% / LogL: -187608
+BEST NUMBER OF THREADS: 4
+
+Estimate model parameters (epsilon = 0.010)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.429 / LogL: -119005.313
+Init pinv, alpha: 0.040, 1.000 / Estimate: 0.278, 1.801 / LogL: -118807.958
+Init pinv, alpha: 0.080, 1.000 / Estimate: 0.278, 1.825 / LogL: -118807.872
+Init pinv, alpha: 0.120, 1.000 / Estimate: 0.278, 1.806 / LogL: -118808.032
+Init pinv, alpha: 0.159, 1.000 / Estimate: 0.278, 1.800 / LogL: -118808.259
+Init pinv, alpha: 0.199, 1.000 / Estimate: 0.278, 1.803 / LogL: -118808.379
+Init pinv, alpha: 0.239, 1.000 / Estimate: 0.278, 1.812 / LogL: -118808.406
+Init pinv, alpha: 0.279, 1.000 / Estimate: 0.278, 1.808 / LogL: -118808.636
+Init pinv, alpha: 0.319, 1.000 / Estimate: 0.278, 1.813 / LogL: -118808.791
+Init pinv, alpha: 0.359, 1.000 / Estimate: 0.278, 1.830 / LogL: -118808.885
+Optimal pinv,alpha: 0.278, 1.825 / LogL: -118807.872
+
+Parameters optimization took 51.567 sec
+BEST SCORE FOUND : -118807.872
+Total tree length: 4.086
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 209.843 sec (0h:3m:29s)
+Total wall-clock time used: 62.373 sec (0h:1m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                ebolaTrueMSA.fasta.iqtree
+  Maximum-likelihood tree:       ebolaTrueMSA.fasta.treefile
+  Screen log file:               ebolaTrueMSA.fasta.log
+
+Date and Time: Wed Aug 26 19:37:34 2020
