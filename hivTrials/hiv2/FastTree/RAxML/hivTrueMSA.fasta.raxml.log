@@ -5,14 +5,14 @@ Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Be
 Latest version: https://github.com/amkozlov/raxml-ng
 Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
 
-RAxML-NG was called at 24-Aug-2020 16:10:36 as follows:
+RAxML-NG was called at 30-Sep-2020 09:02:25 as follows:
 
-raxml-ng --msa hivTrueMSA.fasta --model GTR+I+G --evaluate --tree resolved.tre
+raxml-ng --msa hivTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
 
 Analysis options:
   run mode: Evaluate tree likelihood
   start tree(s): user
-  random seed: 1598310636
+  random seed: 1601481745
   tip-inner: OFF
   pattern compression: ON
   per-rate scalers: OFF
@@ -21,53 +21,6 @@ Analysis options:
   SIMD kernels: AVX2
   parallelization: PTHREADS (4 threads), thread pinning: OFF
 
-[00:00:00] Reading alignment from file: hivTrueMSA.fasta
-[00:00:00] Loaded alignment with 100 taxa and 18161 sites
 
-Alignment comprises 1 partitions and 12522 patterns
-
-Partition 0: noname
-Model: GTR+FO+I+G4m
-Alignment sites / patterns: 18161 / 12522
-Gaps: 24.64 %
-Invariant sites: 32.68 %
-
-
-NOTE: Binary MSA file created: hivTrueMSA.fasta.raxml.rba
-
-[00:00:00] Loading user starting tree(s) from: resolved.tre
-[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 3131 / 50096
-
-Evaluating 1 trees
-
-[00:00:00] Tree #1, initial LogLikelihood: -756348.005909
-
-[00:00:00 -756348.005909] Initial branch length optimization
-[00:00:00 -754235.309909] Model parameter optimization (eps = 0.100000)
-
-[00:00:14] Tree #1, final logLikelihood: -712710.799705
-
-
-Optimized model parameters:
-
-   Partition 0: noname
-   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.493628 (ML),  weights&rates: (0.250000,0.032213) (0.250000,0.247736) (0.250000,0.815576) (0.250000,2.904475) 
-   P-inv (ML): 0.015997
-   Base frequencies (ML): 0.364255 0.176014 0.237953 0.221779 
-   Substitution rates (ML): 1.771040 4.258160 0.842321 0.917279 5.083613 1.000000 
-
-
-Final LogLikelihood: -712710.799705
-
-AIC score: 1425835.599410 / AICc score: 1425840.395935 / BIC score: 1427451.654976
-Free parameters (model + branch lengths): 207
-
-Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv2/FastTree/RAxML/hivTrueMSA.fasta.raxml.bestTree
-Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv2/FastTree/RAxML/hivTrueMSA.fasta.raxml.bestModel
-
-Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv2/FastTree/RAxML/hivTrueMSA.fasta.raxml.log
-
-Analysis started: 24-Aug-2020 16:10:36 / finished: 24-Aug-2020 16:10:51
-
-Elapsed time: 14.171 seconds
+ERROR: Alignment file not found: hivTrueMSA.fasta
 

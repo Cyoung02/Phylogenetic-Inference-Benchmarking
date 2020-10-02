@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+for ((i=0; i < 10; i++))
+do
+    cd hiv$i/RAxML
+    rm *
+    cp ../trueData/hivTrueMSA.fasta .
+    raxml-ng --msa hivTrueMSA.fasta --model GTR+FO+I+R4
+
+    cd ../FastTree/RAxML
+    rm *
+    cp ../../../trueData/hivTrueMSA.fasta .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    raxml-ng --msa hivTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
+
+    cd ../../ClustalOmega/RAxML
+    rm *
+    cp ../Clustal.aln .
+    raxml-ng --msa Clustal.aln --model GTR+FO+I+R4
+
+    cd ../../MUSCLE/RAxML
+    rm *
+    cp ../MUSCLE.aln .
+    raxml-ng --msa MUSCLE.aln --model GTR+FO+I+R4
+
+    cd ../../MAFFT/RAxML
+    rm *
+    cp ../MAFFT.aln .
+    raxml-ng --msa MAFFT.aln --model GTR+FO+I+R4
+
+    cd ../../../
+done
