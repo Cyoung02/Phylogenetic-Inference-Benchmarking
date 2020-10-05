@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+for ((i=0; i < 10; i++))
+do
+    cd hcv$i/FastTree/RAxML
+    rm *
+    cp ../../trueData/hcvTrueMSA.fasta .
+    cat ../fast.tre | resolve_random.py > resolved.tre
+    raxml-ng --msa hcvTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
+done

@@ -9,7 +9,7 @@ do
 
     cd ../FastTree/RAxML
     rm *
-    cp ../../../trueData/ebolaTrueMSA.fasta .
+    cp ../../trueData/ebolaTrueMSA.fasta .
     cat ../fast.tre | resolve_random.py > resolved.tre
     raxml-ng --msa ebolaTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
 

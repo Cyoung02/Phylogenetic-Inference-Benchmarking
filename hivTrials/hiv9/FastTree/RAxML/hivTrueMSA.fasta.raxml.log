@@ -5,14 +5,14 @@ Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Be
 Latest version: https://github.com/amkozlov/raxml-ng
 Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
 
-RAxML-NG was called at 02-Oct-2020 06:12:03 as follows:
+RAxML-NG was called at 04-Oct-2020 16:12:23 as follows:
 
 raxml-ng --msa hivTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
 
 Analysis options:
   run mode: Evaluate tree likelihood
   start tree(s): user
-  random seed: 1601644323
+  random seed: 1601853143
   tip-inner: OFF
   pattern compression: ON
   per-rate scalers: OFF
@@ -21,6 +21,31 @@ Analysis options:
   SIMD kernels: AVX2
   parallelization: PTHREADS (4 threads), thread pinning: OFF
 
+[00:00:00] Reading alignment from file: hivTrueMSA.fasta
+[00:00:00] Loaded alignment with 100 taxa and 18422 sites
 
-ERROR: Alignment file not found: hivTrueMSA.fasta
+WARNING: Fully undetermined columns found: 9
 
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv9/FastTree/RAxML/hivTrueMSA.fasta.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 12391 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 18413 / 12391
+Gaps: 25.93 %
+Invariant sites: 34.31 %
+
+
+NOTE: Binary MSA file created: hivTrueMSA.fasta.raxml.rba
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 3098 / 49568
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -748522.961909
+
+[00:00:00 -748522.961909] Initial branch length optimization
+[00:00:00 -746523.682057] Model parameter optimization (eps = 0.100000)

@@ -1,25 +1,27 @@
 
-RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
 Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
 Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
 Latest version: https://github.com/amkozlov/raxml-ng
 Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
 
-RAxML-NG was called at 24-Aug-2020 08:49:39 as follows:
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
 
-raxml-ng --msa ebolaTrueMSA.fasta --model GTR+I+G --evaluate --tree resolved.tre
+RAxML-NG was called at 05-Oct-2020 03:16:53 as follows:
+
+raxml-ng --msa ebolaTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
 
 Analysis options:
   run mode: Evaluate tree likelihood
   start tree(s): user
-  random seed: 1598284179
+  random seed: 1601893013
   tip-inner: OFF
   pattern compression: ON
   per-rate scalers: OFF
   site repeats: ON
   branch lengths: proportional (ML estimate, algorithm: NR-FAST)
   SIMD kernels: AVX2
-  parallelization: PTHREADS (4 threads), thread pinning: OFF
+  parallelization: coarse-grained (auto), PTHREADS (auto)
 
 [00:00:00] Reading alignment from file: ebolaTrueMSA.fasta
 [00:00:00] Loaded alignment with 100 taxa and 20190 sites
@@ -49,7 +51,7 @@ NOTE: was saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/eb
 Alignment comprises 1 partitions and 3308 patterns
 
 Partition 0: noname
-Model: GTR+FO+I+G4m
+Model: GTR+FO+I+R4
 Alignment sites / patterns: 20187 / 3308
 Gaps: 3.15 %
 Invariant sites: 36.02 %
@@ -57,39 +59,46 @@ Invariant sites: 36.02 %
 
 NOTE: Binary MSA file created: ebolaTrueMSA.fasta.raxml.rba
 
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
 [00:00:00] Loading user starting tree(s) from: resolved.tre
 [00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 827 / 13232
+[00:00:00] Data distribution: max. searches per worker: 1
 
 Evaluating 1 trees
 
-[00:00:00] Tree #1, initial LogLikelihood: -156033.606727
+[00:00:00] Tree #1, initial LogLikelihood: -156033.955346
 
-[00:00:00 -156033.606727] Initial branch length optimization
-[00:00:00 -123045.495459] Model parameter optimization (eps = 0.100000)
+[00:00:00 -156033.955346] Initial branch length optimization
+[00:00:00 -123045.495528] Model parameter optimization (eps = 0.100000)
 
-[00:00:01] Tree #1, final logLikelihood: -118903.166861
+[00:00:13] Tree #1, final logLikelihood: -118902.758108
 
 
 Optimized model parameters:
 
    Partition 0: noname
-   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 1.856444 (ML),  weights&rates: (0.250000,0.275514) (0.250000,0.638825) (0.250000,1.065944) (0.250000,2.019716) 
-   P-inv (ML): 0.282417
-   Base frequencies (ML): 0.318616 0.214773 0.198208 0.268403 
-   Substitution rates (ML): 1.608293 5.167176 0.775518 0.437291 6.414465 1.000000 
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.143959,0.035482) (0.307005,0.484269) (0.160232,0.826752) (0.388804,1.835750) 
+   P-inv (ML): 0.204860
+   Base frequencies (ML): 0.318760 0.214720 0.198221 0.268299 
+   Substitution rates (ML): 1.589584 5.055200 0.767916 0.434527 6.288795 1.000000 
 
 
-Final LogLikelihood: -118903.166861
+Final LogLikelihood: -118902.758108
 
-AIC score: 238220.333722 / AICc score: 238224.643848 / BIC score: 239858.282104
-Free parameters (model + branch lengths): 207
+AIC score: 238229.516217 / AICc score: 238234.037694 / BIC score: 239907.028568
+Free parameters (model + branch lengths): 212
 
 Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola5/FastTree/RAxML/ebolaTrueMSA.fasta.raxml.bestTree
 Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola5/FastTree/RAxML/ebolaTrueMSA.fasta.raxml.bestModel
 
 Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola5/FastTree/RAxML/ebolaTrueMSA.fasta.raxml.log
 
-Analysis started: 24-Aug-2020 08:49:39 / finished: 24-Aug-2020 08:49:41
+Analysis started: 05-Oct-2020 03:16:53 / finished: 05-Oct-2020 03:17:06
 
-Elapsed time: 1.741 seconds
+Elapsed time: 13.061 seconds
+
+Consumed energy: 0.263 Wh
 
