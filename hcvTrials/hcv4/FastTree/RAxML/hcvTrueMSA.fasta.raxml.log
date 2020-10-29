@@ -1,26 +1,82 @@
 
-RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
 Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
 Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
 Latest version: https://github.com/amkozlov/raxml-ng
 Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
 
-RAxML-NG was called at 03-Oct-2020 02:07:35 as follows:
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
+
+RAxML-NG was called at 29-Oct-2020 11:30:21 as follows:
 
 raxml-ng --msa hcvTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
 
 Analysis options:
   run mode: Evaluate tree likelihood
   start tree(s): user
-  random seed: 1601716055
+  random seed: 1603996221
   tip-inner: OFF
   pattern compression: ON
   per-rate scalers: OFF
   site repeats: ON
   branch lengths: proportional (ML estimate, algorithm: NR-FAST)
   SIMD kernels: AVX2
-  parallelization: PTHREADS (4 threads), thread pinning: OFF
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+[00:00:00] Reading alignment from file: hcvTrueMSA.fasta
+[00:00:00] Loaded alignment with 100 taxa and 10525 sites
+
+Alignment comprises 1 partitions and 6389 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 10525 / 6389
+Gaps: 5.94 %
+Invariant sites: 36.19 %
 
 
-ERROR: Alignment file not found: hcvTrueMSA.fasta
+NOTE: Binary MSA file created: hcvTrueMSA.fasta.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1598 / 25568
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -307230.400172
+
+[00:00:00 -307230.400172] Initial branch length optimization
+[00:00:00 -306592.625529] Model parameter optimization (eps = 0.100000)
+
+[00:00:10] Tree #1, final logLikelihood: -276547.102793
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.389621,0.100526) (0.305233,0.538001) (0.215423,1.706213) (0.089723,4.782045) 
+   P-inv (ML): 0.287101
+   Base frequencies (ML): 0.202629 0.299497 0.282370 0.215504 
+   Substitution rates (ML): 1.864099 12.454885 2.635908 0.966726 15.672184 1.000000 
+
+
+Final LogLikelihood: -276547.102793
+
+AIC score: 553518.205587 / AICc score: 553526.963538 / BIC score: 555057.645422
+Free parameters (model + branch lengths): 212
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv4/FastTree/RAxML/hcvTrueMSA.fasta.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv4/FastTree/RAxML/hcvTrueMSA.fasta.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv4/FastTree/RAxML/hcvTrueMSA.fasta.raxml.log
+
+Analysis started: 29-Oct-2020 11:30:21 / finished: 29-Oct-2020 11:30:32
+
+Elapsed time: 10.369 seconds
+
+Consumed energy: 0.180 Wh
 

@@ -49,3 +49,86 @@ Evaluating 1 trees
 
 [00:00:00 -748522.961909] Initial branch length optimization
 [00:00:00 -746523.682057] Model parameter optimization (eps = 0.100000)
+
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
+
+RAxML-NG was called at 29-Oct-2020 11:24:25 as follows:
+
+raxml-ng --msa hivTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
+
+Analysis options:
+  run mode: Evaluate tree likelihood
+  start tree(s): user
+  random seed: 1603995865
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+WARNING: The model you specified on the command line (GTR+FO+I+R4) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: hivTrueMSA.fasta.raxml.rba
+[00:00:00] Alignment comprises 100 taxa, 1 partitions and 12391 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 18413 / 12391
+Gaps: 25.93 %
+Invariant sites: 0.00 %
+
+
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 3098 / 49568
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -748522.961909
+
+[00:00:00 -748522.961909] Initial branch length optimization
+[00:00:01 -746523.682057] Model parameter optimization (eps = 0.100000)
+
+[00:01:35] Tree #1, final logLikelihood: -705410.338445
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.251038,0.032686) (0.246717,0.253342) (0.253535,0.825809) (0.248711,2.894607) 
+   P-inv (ML): 0.017544
+   Base frequencies (ML): 0.364894 0.175563 0.239035 0.220508 
+   Substitution rates (ML): 1.754196 4.168181 0.817588 0.897674 5.028293 1.000000 
+
+
+Final LogLikelihood: -705410.338445
+
+AIC score: 1411244.676889 / AICc score: 1411249.639087 / BIC score: 1412902.689079
+Free parameters (model + branch lengths): 212
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv9/FastTree/RAxML/hivTrueMSA.fasta.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv9/FastTree/RAxML/hivTrueMSA.fasta.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv9/FastTree/RAxML/hivTrueMSA.fasta.raxml.log
+
+Analysis started: 29-Oct-2020 11:24:25 / finished: 29-Oct-2020 11:26:01
+
+Elapsed time: 95.828 seconds
+
+Consumed energy: 1.625 Wh
+

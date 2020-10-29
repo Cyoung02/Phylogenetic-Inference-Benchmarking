@@ -1,26 +1,87 @@
 
-RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
 Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
 Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
 Latest version: https://github.com/amkozlov/raxml-ng
 Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
 
-RAxML-NG was called at 01-Oct-2020 10:16:14 as follows:
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
+
+RAxML-NG was called at 29-Oct-2020 11:19:55 as follows:
 
 raxml-ng --msa hivTrueMSA.fasta --model GTR+FO+I+R4 --evaluate --tree resolved.tre
 
 Analysis options:
   run mode: Evaluate tree likelihood
   start tree(s): user
-  random seed: 1601572574
+  random seed: 1603995595
   tip-inner: OFF
   pattern compression: ON
   per-rate scalers: OFF
   site repeats: ON
   branch lengths: proportional (ML estimate, algorithm: NR-FAST)
   SIMD kernels: AVX2
-  parallelization: PTHREADS (4 threads), thread pinning: OFF
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+[00:00:00] Reading alignment from file: hivTrueMSA.fasta
+[00:00:00] Loaded alignment with 100 taxa and 18374 sites
+
+WARNING: Fully undetermined columns found: 22
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv6/FastTree/RAxML/hivTrueMSA.fasta.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 12305 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 18352 / 12305
+Gaps: 26.16 %
+Invariant sites: 34.76 %
 
 
-ERROR: Alignment file not found: hivTrueMSA.fasta
+NOTE: Binary MSA file created: hivTrueMSA.fasta.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 3077 / 49232
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -746170.191682
+
+[00:00:00 -746170.191682] Initial branch length optimization
+[00:00:01 -744122.370668] Model parameter optimization (eps = 0.100000)
+
+[00:01:46] Tree #1, final logLikelihood: -703917.037739
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.248131,0.033471) (0.245761,0.242623) (0.250404,0.796580) (0.255703,2.865042) 
+   P-inv (ML): 0.025692
+   Base frequencies (ML): 0.363600 0.177113 0.238263 0.221023 
+   Substitution rates (ML): 1.792733 4.223703 0.838772 0.930418 5.131448 1.000000 
+
+
+Final LogLikelihood: -703917.037739
+
+AIC score: 1408258.075477 / AICc score: 1408263.054362 / BIC score: 1409915.384171
+Free parameters (model + branch lengths): 212
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv6/FastTree/RAxML/hivTrueMSA.fasta.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv6/FastTree/RAxML/hivTrueMSA.fasta.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv6/FastTree/RAxML/hivTrueMSA.fasta.raxml.log
+
+Analysis started: 29-Oct-2020 11:19:55 / finished: 29-Oct-2020 11:21:42
+
+Elapsed time: 106.555 seconds
+
+Consumed energy: 1.771 Wh
 
