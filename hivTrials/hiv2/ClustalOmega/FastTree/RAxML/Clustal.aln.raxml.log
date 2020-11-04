@@ -1,0 +1,82 @@
+
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
+
+RAxML-NG was called at 03-Nov-2020 02:19:50 as follows:
+
+raxml-ng --msa Clustal.aln --model GTR+FO+I+R4 --evaluate --tree resolved.tre
+
+Analysis options:
+  run mode: Evaluate tree likelihood
+  start tree(s): user
+  random seed: 1604398790
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+[00:00:00] Reading alignment from file: Clustal.aln
+[00:00:00] Loaded alignment with 100 taxa and 18019 sites
+
+Alignment comprises 1 partitions and 12603 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 18019 / 12603
+Gaps: 24.04 %
+Invariant sites: 31.64 %
+
+
+NOTE: Binary MSA file created: Clustal.aln.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 3151 / 50416
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -757105.774195
+
+[00:00:00 -757105.774195] Initial branch length optimization
+[00:00:00 -755015.889285] Model parameter optimization (eps = 0.100000)
+
+[00:01:13] Tree #1, final logLikelihood: -713612.638664
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.246425,0.036025) (0.242552,0.243651) (0.250017,0.790663) (0.261007,2.813513) 
+   P-inv (ML): 0.027634
+   Base frequencies (ML): 0.364347 0.175952 0.238003 0.221698 
+   Substitution rates (ML): 1.768935 4.243565 0.843952 0.918647 5.070705 1.000000 
+
+
+Final LogLikelihood: -713612.638664
+
+AIC score: 1427649.277328 / AICc score: 1427654.349326 / BIC score: 1429302.703919
+Free parameters (model + branch lengths): 212
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv2/ClustalOmega/FastTree/RAxML/Clustal.aln.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv2/ClustalOmega/FastTree/RAxML/Clustal.aln.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hivTrials/hiv2/ClustalOmega/FastTree/RAxML/Clustal.aln.raxml.log
+
+Analysis started: 03-Nov-2020 02:19:50 / finished: 03-Nov-2020 02:21:04
+
+Elapsed time: 73.804 seconds
+
+Consumed energy: 1.267 Wh
+

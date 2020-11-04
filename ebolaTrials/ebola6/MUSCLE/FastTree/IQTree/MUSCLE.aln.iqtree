@@ -1,0 +1,282 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Input file name: MUSCLE.aln
+User tree file name: ../fast.tre
+Type of analysis: tree reconstruction
+Random seed number: 588956
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 100 sequences with 20446 nucleotide sites
+Number of constant sites: 7574 (= 37.0439% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 7574 (= 37.0439% of all sites)
+Number of parsimony informative sites: 11675
+Number of distinct site patterns: 3414
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+R4
+
+Rate parameter R:
+
+  A-C: 1.6812
+  A-G: 4.8885
+  A-T: 0.7442
+  C-G: 0.4247
+  C-T: 6.0135
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3175
+  pi(C) = 0.2134
+  pi(G) = 0.1948
+  pi(T) = 0.2744
+
+Rate matrix Q:
+
+  A   -0.8379    0.1984    0.5266    0.1129
+  C    0.2952    -1.253   0.04575    0.9124
+  G    0.8583   0.05012     -1.06    0.1517
+  T    0.1307    0.7096    0.1077    -0.948
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.228
+Site proportion and rates:  (0.1435,0.1504) (0.1926,0.7311) (0.2197,1.099) (0.2161,2.759)
+
+ Category  Relative_rate  Proportion
+  0         0              0.228
+  1         0.1504         0.1435
+  2         0.7311         0.1926
+  3         1.099          0.2197
+  4         2.759          0.2161
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -118272.1589 (s.e. 495.1242)
+Unconstrained log-likelihood (without tree): -119910.4861
+Number of free parameters (#branches + #model parameters): 200
+Akaike information criterion (AIC) score: 236944.3178
+Corrected Akaike information criterion (AICc) score: 236948.2892
+Bayesian information criterion (BIC) score: 238529.4263
+
+Total tree length (sum of branch lengths): 3.8553
+Sum of internal branch lengths: 2.9947 (77.6782% of tree length)
+
+WARNING: 49 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'RESTV_S.dom-xx_PHL_08_Reston08-C_FJ621584' is drawn at root
+
++--RESTV_S.dom-xx_PHL_08_Reston08-C_FJ621584
+| (1.000)
+|  +--RESTV_M.fas-tc_USA_89_Philippines89-Pennsylvania_NC_004161
++--| (0.997)
+|  +--RESTV_S.dom-tc_PHL_08_Reston08-A_FJ621583
+|
+|                                                     +**SUDV_H.sap-xx_UGA_12_EboSud-603_KC545390
+|                         +---------------------------| (1.000)
+|                         |                           +--SUDV_H.sap-xx_UGA_12_EboSud-609_KC545391
++-------------------------| (1.000)
+                          |                             +--EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_080076_KR817235
+                          |                          +--| (0.919)
+                          |                          |  +--EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079702_KR817210
+                          |                       +--| (0.971)
+                          |                       |  +--EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079587_KR817202
+                          |                    +--| (0.095)
+                          |                    |  |                                         +--EBOV_H.sap-wt_GIN_14_Makona-Kankan-EM_078639_KR817166
+                          |                    |  |                                      +--| (0.716)
+                          |                    |  |                                      |  +--EBOV_H.sap-wt_GIN_14_Makona-Faranah-EM_078415_KR817160
+                          |                    |  |                                   +--| (0.872)
+                          |                    |  |                                   |  +--EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076191_KR817141
+                          |                    |  |                                +**| (0.472)
+                          |                    |  |                                |  |  +**EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171
+                          |                    |  |                                |  +--|
+                          |                    |  |                                |     +**EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175
+                          |                    |  |                             +--| (0.915)
+                          |                    |  |                             |  +--EBOV_H.sap-wt_GIN_14_Makona-Beyla-EM_075931_KR817138
+                          |                    |  |                          +--| (0.913)
+                          |                    |  |                          |  +--EBOV_H.sap-wt_LBR_14_Makona-LIBR0505_KR006957
+                          |                    |  |                       +**| (0.000)
+                          |                    |  |                       |  |  +--EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_000982_KR817086
+                          |                    |  |                       |  +**| (0.749)
+                          |                    |  |                       |     +--EBOV_H.sap-wt_SLE_14_Makona-J0054_KP759722
+                          |                    |  |                    +**| (0.000)
+                          |                    |  |                    |  |                       +--EBOV_H.sap-wt_SLE_14_Makona-Koinadugu-20143659_KR653256
+                          |                    |  |                    |  |                    +**| (0.118)
+                          |                    |  |                    |  |                    |  +--EBOV_H.sap-wt_SLE_14_Makona-J0128_KP759677
+                          |                    |  |                    |  |                 +--| (0.860)
+                          |                    |  |                    |  |                 |  |        +--EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0083_KP759752
+                          |                    |  |                    |  |                 |  |     +**| (0.126)
+                          |                    |  |                    |  |                 |  |     |  +--EBOV_H.sap-wt_SLE_14_Makona-J0119_KP759667
+                          |                    |  |                    |  |                 |  |  +--| (0.921)
+                          |                    |  |                    |  |                 |  |  |  +--EBOV_H.sap-wt_SLE_14_Makona-J0158_KP759700
+                          |                    |  |                    |  |                 |  +--| (0.853)
+                          |                    |  |                    |  |                 |     +**EBOV_H.sap-wt_SLE_14_Makona-PortLoko-20140024_KR653252
+                          |                    |  |                    |  |              +**| (0.893)
+                          |                    |  |                    |  |              |  +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4730_1_KR105268
+                          |                    |  |                    |  |           +**| (0.000)
+                          |                    |  |                    |  |           |  |        +--EBOV_H.sap-wt_SLE_14_Makona-J0117_KP759665
+                          |                    |  |                    |  |           |  |     +--| (0.993)
+                          |                    |  |                    |  |           |  |     |  +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5685_1_KR105317
+                          |                    |  |                    |  |           |  |  +**| (0.650)
+                          |                    |  |                    |  |           |  |  |  +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-20140590_KR653278
+                          |                    |  |                    |  |           |  +**| (0.000)
+                          |                    |  |                    |  |           |     +--EBOV_H.sap-wt_SLE_14_Makona-G4748_1_KR105270
+                          |                    |  |                    |  |        +**| (0.000)
+                          |                    |  |                    |  |        |  |     +--EBOV_H.sap-wt_SLE_14_Makona-J0093_KP759760
+                          |                    |  |                    |  |        |  |  +--| (0.978)
+                          |                    |  |                    |  |        |  |  |  +**EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0080_KP759749
+                          |                    |  |                    |  |        |  +**| (0.985)
+                          |                    |  |                    |  |        |     +--EBOV_H.sap-wt_SLE_14_Makona-Kailahun-G4255_1_KR105226
+                          |                    |  |                    |  |     +**| (0.927)
+                          |                    |  |                    |  |     |  |     +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5039_1_KR105295
+                          |                    |  |                    |  |     |  |  +**| (0.916)
+                          |                    |  |                    |  |     |  |  |  |  +**EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757
+                          |                    |  |                    |  |     |  |  |  +--|
+                          |                    |  |                    |  |     |  |  |     +**EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754
+                          |                    |  |                    |  |     |  +**| (0.000)
+                          |                    |  |                    |  |     |     |  +**EBOV_H.sap-wt_SLE_14_Makona-G3825.1_KM233098
+                          |                    |  |                    |  |     |     +**|
+                          |                    |  |                    |  |     |        +**EBOV_H.sap-wt_SLE_14_Makona-G5296_1_KR105303
+                          |                    |  |                    |  |  +--| (0.837)
+                          |                    |  |                    |  |  |  +--EBOV_H.sap-wt_SLE_14_Makona-G4994_1_KR105289
+                          |                    |  |                    |  +**| (0.000)
+                          |                    |  |                    |     |        +--EBOV_H.sap-wt_GIN_14_Makona-Nzerekore-EM_074437_KR817117
+                          |                    |  |                    |     |     +**| (0.227)
+                          |                    |  |                    |     |     |  +--EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074720_KR817125
+                          |                    |  |                    |     |  +--| (0.915)
+                          |                    |  |                    |     |  |  +**EBOV_H.sap-wt_LBR_14_Makona-EM_080065_KR817232
+                          |                    |  |                    |     +**| (0.229)
+                          |                    |  |                    |        +--EBOV_H.sap-wt_SLE_14_Makona-G3827_KM233101
+                          |                    |  |                 +**| (0.000)
+                          |                    |  |                 |  |        +**EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5763_1_KR105325
+                          |                    |  |                 |  |     +--|
+                          |                    |  |                 |  |     |  +**EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5844_1_KR105328
+                          |                    |  |                 |  |  +**| (0.975)
+                          |                    |  |                 |  |  |  +--EBOV_H.sap-wt_SLE_14_Makona-G3949_1_KR105209
+                          |                    |  |                 |  +**| (1.000)
+                          |                    |  |                 |     |     +--EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE6_KR075000
+                          |                    |  |                 |     |  +**| (0.920)
+                          |                    |  |                 |     |  |  +--EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076322_KR817145
+                          |                    |  |                 |     +**|
+                          |                    |  |                 |        |  +**EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055
+                          |                    |  |                 |        +**|
+                          |                    |  |                 |           +**EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075
+                          |                    |  |              +**| (0.000)
+                          |                    |  |              |  |        +**EBOV_H.sap-wt_GIN_15_Makona-Faranah-EM_004503_KR817102
+                          |                    |  |              |  |     +--| (0.990)
+                          |                    |  |              |  |     |  +--EBOV_H.sap-wt_GIN_15_Makona-Kissidougou-EM_004555_KR817103
+                          |                    |  |              |  |  +--| (0.769)
+                          |                    |  |              |  |  |  |  +--EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074353_KR817112
+                          |                    |  |              |  |  |  +--| (0.884)
+                          |                    |  |              |  |  |     +--EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074350_KR817109
+                          |                    |  |              |  +**| (0.883)
+                          |                    |  |              |     +--EBOV_H.sap-wt_SLE_14_Makona-G3799_KM233080
+                          |                    |  |           +**| (0.000)
+                          |                    |  |           |  |        +--EBOV_H.sap-wt_SLE_14_Makona-G4973_1_KR105286
+                          |                    |  |           |  |     +--| (0.940)
+                          |                    |  |           |  |     |  +--EBOV_H.sap-wt_SLE_14_Makona-Kailahun-20140517_KR653263
+                          |                    |  |           |  |  +**| (0.894)
+                          |                    |  |           |  |  |  +--EBOV_H.sap-wt_SLE_14_Makona-G3770.2_KM233070
+                          |                    |  |           |  +**| (0.000)
+                          |                    |  |           |     |  +--EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE4_KR074998
+                          |                    |  |           |     +**| (0.399)
+                          |                    |  |           |        |  +--EBOV_H.sap-wt_SLE_14_Makona-G3818_KM233092
+                          |                    |  |           |        +--| (0.813)
+                          |                    |  |           |           |  +**EBOV_H.sap-wt_SLE_14_Makona-EM110_KM233037
+                          |                    |  |           |           +**|
+                          |                    |  |           |              +**EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118
+                          |                    |  |        +**| (0.000)
+                          |                    |  |        |  |        +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5059_1_KR105296
+                          |                    |  |        |  |     +--| (0.964)
+                          |                    |  |        |  |     |  |  +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4702_1_KR105265
+                          |                    |  |        |  |     |  +**| (0.256)
+                          |                    |  |        |  |     |     |     +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242
+                          |                    |  |        |  |     |     |  +**| (0.274)
+                          |                    |  |        |  |     |     |  |  +--EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4856_1_KR105273
+                          |                    |  |        |  |     |     +--| (0.842)
+                          |                    |  |        |  |     |        |  +**EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4971_1_KR105284
+                          |                    |  |        |  |     |        +**|
+                          |                    |  |        |  |     |           +**EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4937_1_KR105278
+                          |                    |  |        |  |  +**| (0.641)
+                          |                    |  |        |  |  |  +--EBOV_H.sap-wt_LBR_14_Makona-LIBR0430_KR006955
+                          |                    |  |        |  +**| (0.850)
+                          |                    |  |        |     |     +**EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707
+                          |                    |  |        |     |  +--|
+                          |                    |  |        |     |  |  +**EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708
+                          |                    |  |        |     +--| (0.944)
+                          |                    |  |        |        |  +--EBOV_H.sap-wt_SLE_14_Makona-J0150_KP759696
+                          |                    |  |        |        +**| (0.567)
+                          |                    |  |        |           |     +--EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G6103_1_KR105348
+                          |                    |  |        |           |  +**| (0.921)
+                          |                    |  |        |           |  |  +--EBOV_H.sap-wt_SLE_14_Makona-Bonthe-G5723_1_KR105319
+                          |                    |  |        |           +**| (0.590)
+                          |                    |  |        |              +**EBOV_H.sap-wt_SLE_14_Makona-J0042_KP759711
+                          |                    |  |     +--| (0.987)
+                          |                    |  |     |  |  +--EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_076138_KR817140
+                          |                    |  |     |  +**| (0.651)
+                          |                    |  |     |     +--EBOV_H.sap-wt_SLE_14_Makona-G5640_1_KR105313
+                          |                    |  |  +--| (0.982)
+                          |                    |  |  |  +**EBOV_H.sap-wt_SLE_14_Makona-G3676.1_KM034554
+                          |                    |  +**| (0.911)
+                          |                    |     |        +--EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079750_KR817213
+                          |                    |     |     +--| (0.997)
+                          |                    |     |     |  +--EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079910_KR817221
+                          |                    |     |  +**| (0.995)
+                          |                    |     |  |  |  +**EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C05_KP096420
+                          |                    |     |  |  +--| (0.994)
+                          |                    |     |  |     +--EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-C15_KT013254
+                          |                    |     +**| (0.924)
+                          |                    |        |     +--EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079424_KR817189
+                          |                    |        |  +**| (0.984)
+                          |                    |        |  |  |  +**EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421
+                          |                    |        |  |  +--|
+                          |                    |        |  |     +**EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256
+                          |                    |        +**| (0.000)
+                          |                    |           +**EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079422_KR817187
+                          |       +------------| (1.000)
+                          |       |            |     +--EBOV_H.sap-tc_COD_08_034-KS_HQ613402
+                          |       |            |  +--| (1.000)
+                          |       |            |  |  |     +--EBOV_H.sap-tc_COD_07_5Luebo_KC242790
+                          |       |            |  |  |  +**| (0.977)
+                          |       |            |  |  |  |  +--EBOV_H.sap-tc_COD_07_1Luebo_KC242786
+                          |       |            |  |  +**| (0.983)
+                          |       |            |  |     +**EBOV_H.sap-tc_COD_07_M-M_HQ613403
+                          |       |            +--| (0.436)
+                          |       |               |  +--EBOV_H.sap-tc_COD_77_Bonduni_KC242791
+                          |       |               +--| (1.000)
+                          |       |                  |  +--EBOV_H.sap-tc_COD_95_Kikwit-9510621_KR867676
+                          |       |                  +--| (1.000)
+                          |       |                     |  +--EBOV_H.sap-xx_COD_14_Lomela-Lokolia16_KP271018
+                          |       |                     +--| (1.000)
+                          |       |                        +--EBOV_H.sap-xx_COD_14_Lomela-Lokolia17_KP271019
+                          +-------| (1.000)
+                                  |          +-----------BDBV_H.sap-xx_COD_12_EboBund-122_KC545395
+                                  +----------| (1.000)
+                                             +----------TAFV_H.sap-tc_CIV_94_Pauleoula-CI_NC_014372
+
+Tree in newick format:
+
+(RESTV_S.dom-xx_PHL_08_Reston08-C_FJ621584:0.0215453954,(RESTV_M.fas-tc_USA_89_Philippines89-Pennsylvania_NC_004161:0.0042497915,RESTV_S.dom-tc_PHL_08_Reston08-A_FJ621583:0.0203070616)0.997:0.0084512290,((SUDV_H.sap-xx_UGA_12_EboSud-603_KC545390:0.0000009108,SUDV_H.sap-xx_UGA_12_EboSud-609_KC545391:0.0022992791)1.000:0.9405587859,(((((EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_080076_KR817235:0.0007219952,EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079702_KR817210:0.0006703568)0.919:0.0001543484,EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079587_KR817202:0.0004638562)0.971:0.0002061658,((((((((((((((EBOV_H.sap-wt_GIN_14_Makona-Kankan-EM_078639_KR817166:0.0005155804,EBOV_H.sap-wt_GIN_14_Makona-Faranah-EM_078415_KR817160:0.0002581700)0.716:0.0000515418,EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076191_KR817141:0.0001546577)0.872:0.0001039223,(EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171:0.0000009108,EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175:0.0000009108):0.0001039003)0.472:0.0000009108,EBOV_H.sap-wt_GIN_14_Makona-Beyla-EM_075931_KR817138:0.0002060189)0.915:0.0001546620,EBOV_H.sap-wt_LBR_14_Makona-LIBR0505_KR006957:0.0003097694)0.913:0.0001546786,(EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_000982_KR817086:0.0003097686,EBOV_H.sap-wt_SLE_14_Makona-J0054_KP759722:0.0002059993)0.749:0.0000009108)0.000:0.0000009108,((((((((EBOV_H.sap-wt_SLE_14_Makona-Koinadugu-20143659_KR653256:0.0004639281,EBOV_H.sap-wt_SLE_14_Makona-J0128_KP759677:0.0002060198)0.118:0.0000009108,(((EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0083_KP759752:0.0002579229,EBOV_H.sap-wt_SLE_14_Makona-J0119_KP759667:0.0001039010)0.126:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-J0158_KP759700:0.0002579286)0.921:0.0000517508,EBOV_H.sap-wt_SLE_14_Makona-PortLoko-20140024_KR653252:0.0000009108)0.853:0.0000517492)0.860:0.0000517490,EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4730_1_KR105268:0.0001038992)0.893:0.0000009108,(((EBOV_H.sap-wt_SLE_14_Makona-J0117_KP759665:0.0001546997,EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5685_1_KR105317:0.0000516882)0.993:0.0003613989,EBOV_H.sap-wt_SLE_14_Makona-Kenema-20140590_KR653278:0.0001038994)0.650:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-G4748_1_KR105270:0.0000517505)0.000:0.0000009108)0.000:0.0000009108,((EBOV_H.sap-wt_SLE_14_Makona-J0093_KP759760:0.0001546451,EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0080_KP759749:0.0000009108)0.978:0.0002060165,EBOV_H.sap-wt_SLE_14_Makona-Kailahun-G4255_1_KR105226:0.0001546343)0.985:0.0000009108)0.000:0.0000009108,((EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5039_1_KR105295:0.0003097531,(EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754:0.0000009108):0.0000517504)0.916:0.0000009108,(EBOV_H.sap-wt_SLE_14_Makona-G3825.1_KM233098:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-G5296_1_KR105303:0.0000009108):0.0000009108)0.000:0.0000009108)0.927:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-G4994_1_KR105289:0.0005154167)0.837:0.0000517497,(((EBOV_H.sap-wt_GIN_14_Makona-Nzerekore-EM_074437_KR817117:0.0003097365,EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074720_KR817125:0.0001039002)0.227:0.0000009108,EBOV_H.sap-wt_LBR_14_Makona-EM_080065_KR817232:0.0000009108)0.915:0.0000517461,EBOV_H.sap-wt_SLE_14_Makona-G3827_KM233101:0.0000517499)0.229:0.0000009108)0.000:0.0000009108)0.000:0.0000009108,(((EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5763_1_KR105325:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5844_1_KR105328:0.0000009108):0.0003612206,EBOV_H.sap-wt_SLE_14_Makona-G3949_1_KR105209:0.0001546212)0.975:0.0000009108,((EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE6_KR075000:0.0002060381,EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_076322_KR817145:0.0000517455)0.920:0.0000009108,(EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-G3788_KM233075:0.0000009108):0.0000009108):0.0000009108)1.000:0.0000009108)0.000:0.0000009108,(((EBOV_H.sap-wt_GIN_15_Makona-Faranah-EM_004503_KR817102:0.0000009108,EBOV_H.sap-wt_GIN_15_Makona-Kissidougou-EM_004555_KR817103:0.0001039002)0.990:0.0002579923,(EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074353_KR817112:0.0001038997,EBOV_H.sap-wt_LBR_14_Makona-Foya-EM_074350_KR817109:0.0000517673)0.884:0.0001039561)0.769:0.0000517121,EBOV_H.sap-wt_SLE_14_Makona-G3799_KM233080:0.0000517476)0.883:0.0000009108)0.000:0.0000009108,(((EBOV_H.sap-wt_SLE_14_Makona-G4973_1_KR105286:0.0004645609,EBOV_H.sap-wt_SLE_14_Makona-Kailahun-20140517_KR653263:0.0002573680)0.940:0.0002579732,EBOV_H.sap-wt_SLE_14_Makona-G3770.2_KM233070:0.0001032585)0.894:0.0000009108,(EBOV_H.sap-wt_LBR_15_Makona-Liberia-DQE4_KR074998:0.0004131429,(EBOV_H.sap-wt_SLE_14_Makona-G3818_KM233092:0.0001039008,(EBOV_H.sap-wt_SLE_14_Makona-EM110_KM233037:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118:0.0000009108):0.0000009108)0.813:0.0000517467)0.399:0.0000009108)0.000:0.0000009108)0.000:0.0000009108,(((EBOV_H.sap-wt_SLE_14_Makona-Kenema-G5059_1_KR105296:0.0003097990,(EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4702_1_KR105265:0.0002060268,((EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242:0.0000517516,EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4856_1_KR105273:0.0000517513)0.274:0.0000009108,(EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4971_1_KR105284:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4937_1_KR105278:0.0000009108):0.0000009108)0.842:0.0000517508)0.256:0.0000009108)0.964:0.0002060201,EBOV_H.sap-wt_LBR_14_Makona-LIBR0430_KR006955:0.0003613384)0.641:0.0000009108,((EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708:0.0000009108):0.0002579121,(EBOV_H.sap-wt_SLE_14_Makona-J0150_KP759696:0.0002060619,((EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G6103_1_KR105348:0.0001039044,EBOV_H.sap-wt_SLE_14_Makona-Bonthe-G5723_1_KR105319:0.0000517507)0.921:0.0000009108,EBOV_H.sap-wt_SLE_14_Makona-J0042_KP759711:0.0000009108)0.590:0.0000009108)0.567:0.0000009108)0.944:0.0001546496)0.850:0.0000009108)0.000:0.0000009108,(EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_076138_KR817140:0.0005669517,EBOV_H.sap-wt_SLE_14_Makona-G5640_1_KR105313:0.0003612908)0.651:0.0000009108)0.987:0.0002578974,EBOV_H.sap-wt_SLE_14_Makona-G3676.1_KM034554:0.0000009108)0.982:0.0001038880,(((EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079750_KR817213:0.0002060260,EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-EM_079910_KR817221:0.0001038881)0.997:0.0004637746,(EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C05_KP096420:0.0000009108,EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-C15_KT013254:0.0000517408)0.994:0.0003097531)0.995:0.0000009108,((EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079424_KR817189:0.0002579774,(EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421:0.0000009108,EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256:0.0000009108):0.0001546158)0.984:0.0000009108,EBOV_H.sap-wt_GIN_14_Makona-Macenta-EM_079422_KR817187:0.0000009108)0.000:0.0000009108)0.924:0.0000009108)0.911:0.0000009108)0.095:0.0188144087,((EBOV_H.sap-tc_COD_08_034-KS_HQ613402:0.0006696091,((EBOV_H.sap-tc_COD_07_5Luebo_KC242790:0.0003096342,EBOV_H.sap-tc_COD_07_1Luebo_KC242786:0.0001545782)0.977:0.0000009108,EBOV_H.sap-tc_COD_07_M-M_HQ613403:0.0000009108)0.983:0.0000009108)1.000:0.0098400278,(EBOV_H.sap-tc_COD_77_Bonduni_KC242791:0.0050381412,(EBOV_H.sap-tc_COD_95_Kikwit-9510621_KR867676:0.0038913779,(EBOV_H.sap-xx_COD_14_Lomela-Lokolia16_KP271018:0.0002539575,EBOV_H.sap-xx_COD_14_Lomela-Lokolia17_KP271019:0.0010894019)1.000:0.0037751366)1.000:0.0037948077)1.000:0.0052277010)0.436:0.0010043574)1.000:0.4457595396,(BDBV_H.sap-xx_COD_12_EboBund-122_KC545395:0.4162829370,TAFV_H.sap-tc_CIV_94_Pauleoula-CI_NC_014372:0.3713897407)1.000:0.3893670392)1.000:0.2912912277)1.000:0.8728692009)1.000;
+
+TIME STAMP
+----------
+
+Date and time: Tue Nov  3 10:18:15 2020
+Total CPU time used: 46.8481 seconds (0h:0m:46s)
+Total wall-clock time used: 19.2111 seconds (0h:0m:19s)
+

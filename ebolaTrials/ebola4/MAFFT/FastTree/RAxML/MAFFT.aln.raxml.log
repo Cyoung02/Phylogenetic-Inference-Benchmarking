@@ -1,0 +1,96 @@
+
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
+
+RAxML-NG was called at 03-Nov-2020 08:37:49 as follows:
+
+raxml-ng --msa MAFFT.aln --model GTR+FO+I+R4 --evaluate --tree resolved.tre
+
+Analysis options:
+  run mode: Evaluate tree likelihood
+  start tree(s): user
+  random seed: 1604421469
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+[00:00:00] Reading alignment from file: MAFFT.aln
+[00:00:00] Loaded alignment with 100 taxa and 20053 sites
+
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-G3735.2_KM233057 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-EM124.3_KM233047 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-G3840_KM233106 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3789.1_KM233076 and EBOV_H.sap-wt_SLE_14_Makona-NM042.1_KM233116 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0022_KP759757 and EBOV_H.sap-wt_SLE_14_Makona-Bombali-J0019_KP759754 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171 and EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175 are exactly identical!
+WARNING: Sequences EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421 and EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707 and EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708 are exactly identical!
+WARNING: Duplicate sequences found: 9
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola4/MAFFT/FastTree/RAxML/MAFFT.aln.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 3290 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 20053 / 3290
+Gaps: 3.35 %
+Invariant sites: 35.66 %
+
+
+NOTE: Binary MSA file created: MAFFT.aln.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 823 / 13168
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -146256.887095
+
+[00:00:00 -146256.887095] Initial branch length optimization
+[00:00:00 -123029.777275] Model parameter optimization (eps = 0.100000)
+
+[00:00:19] Tree #1, final logLikelihood: -118820.872412
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.155957,0.041829) (0.227641,0.481053) (0.285478,0.764796) (0.330924,2.011449) 
+   P-inv (ML): 0.197204
+   Base frequencies (ML): 0.321585 0.209062 0.199456 0.269897 
+   Substitution rates (ML): 1.697411 4.845124 0.661361 0.410988 6.118042 1.000000 
+
+
+Final LogLikelihood: -118820.872412
+
+AIC score: 238065.744824 / AICc score: 238070.296840 / BIC score: 239741.845242
+Free parameters (model + branch lengths): 212
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola4/MAFFT/FastTree/RAxML/MAFFT.aln.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola4/MAFFT/FastTree/RAxML/MAFFT.aln.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola4/MAFFT/FastTree/RAxML/MAFFT.aln.raxml.log
+
+Analysis started: 03-Nov-2020 08:37:49 / finished: 03-Nov-2020 08:38:08
+
+Elapsed time: 19.326 seconds
+
+Consumed energy: 0.317 Wh
+

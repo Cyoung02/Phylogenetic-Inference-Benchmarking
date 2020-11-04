@@ -1,0 +1,101 @@
+
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
+
+RAxML-NG was called at 03-Nov-2020 09:45:06 as follows:
+
+raxml-ng --msa MUSCLE.aln --model GTR+FO+I+R4 --evaluate --tree resolved.tre
+
+Analysis options:
+  run mode: Evaluate tree likelihood
+  start tree(s): user
+  random seed: 1604425506
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+[00:00:00] Reading alignment from file: MUSCLE.aln
+[00:00:00] Loaded alignment with 100 taxa and 20164 sites
+
+WARNING: Sequences EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078694_KR817171 and EBOV_H.sap-wt_GIN_14_Makona-Kissidougou-EM_078722_KR817175 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-J0093_KP759760 and EBOV_H.sap-wt_SLE_14_Makona-PortLoko-J0080_KP759749 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-J0171_KP759707 and EBOV_H.sap-wt_SLE_14_Makona-J0174_KP759708 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242 and EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4971_1_KR105284 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242 and EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4937_1_KR105278 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4350_1_KR105242 and EBOV_H.sap-wt_SLE_14_Makona-Kenema-G4856_1_KR105273 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5763_1_KR105325 and EBOV_H.sap-wt_SLE_14_Makona-Moyamba-G5844_1_KR105328 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-EM110_KM233037 and EBOV_H.sap-wt_SLE_14_Makona-NM042.3_KM233118 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055 and EBOV_H.sap-wt_SLE_14_Makona-G3677.2_KM034557 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055 and EBOV_H.sap-wt_SLE_14_Makona-EM124.3_KM233047 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055 and EBOV_H.sap-wt_SLE_14_Makona-G3827_KM233101 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055 and EBOV_H.sap-wt_SLE_14_Makona-G3840_KM233106 are exactly identical!
+WARNING: Sequences EBOV_H.sap-wt_SLE_14_Makona-G3734.1_KM233055 and EBOV_H.sap-wt_SLE_14_Makona-NM042.1_KM233116 are exactly identical!
+WARNING: Sequences EBOV_H.sap-tc_GIN_14_Makona-Gueckedou-C07_KP096421 and EBOV_H.sap-wt_GIN_14_Makona-Gueckedou-C07_KT013256 are exactly identical!
+WARNING: Duplicate sequences found: 14
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola2/MUSCLE/FastTree/RAxML/MUSCLE.aln.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 3377 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 20164 / 3377
+Gaps: 2.53 %
+Invariant sites: 35.60 %
+
+
+NOTE: Binary MSA file created: MUSCLE.aln.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 845 / 13520
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -155455.541883
+
+[00:00:00 -155455.541883] Initial branch length optimization
+[00:00:00 -123715.845290] Model parameter optimization (eps = 0.100000)
+
+[00:00:10] Tree #1, final logLikelihood: -119652.461256
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.125029,0.018755) (0.303626,0.425930) (0.205286,0.876724) (0.366058,1.880444) 
+   P-inv (ML): 0.198520
+   Base frequencies (ML): 0.321219 0.216344 0.197963 0.264474 
+   Substitution rates (ML): 1.442117 4.584329 0.677799 0.347550 5.210038 1.000000 
+
+
+Final LogLikelihood: -119652.461256
+
+AIC score: 239728.922512 / AICc score: 239733.449202 / BIC score: 241406.193184
+Free parameters (model + branch lengths): 212
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola2/MUSCLE/FastTree/RAxML/MUSCLE.aln.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola2/MUSCLE/FastTree/RAxML/MUSCLE.aln.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/ebolaTrials/ebola2/MUSCLE/FastTree/RAxML/MUSCLE.aln.raxml.log
+
+Analysis started: 03-Nov-2020 09:45:06 / finished: 03-Nov-2020 09:45:17
+
+Elapsed time: 10.576 seconds
+
+Consumed energy: 0.193 Wh
+

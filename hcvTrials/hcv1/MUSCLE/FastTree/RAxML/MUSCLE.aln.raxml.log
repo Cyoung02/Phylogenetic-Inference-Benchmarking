@@ -1,0 +1,82 @@
+
+RAxML-NG v. 1.0.1 released on 19.09.2020 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, 4 cores, 15 GB RAM
+
+RAxML-NG was called at 03-Nov-2020 15:52:53 as follows:
+
+raxml-ng --msa MUSCLE.aln --model GTR+FO+I+R4 --evaluate --tree resolved.tre
+
+Analysis options:
+  run mode: Evaluate tree likelihood
+  start tree(s): user
+  random seed: 1604447573
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+[00:00:00] Reading alignment from file: MUSCLE.aln
+[00:00:00] Loaded alignment with 100 taxa and 10722 sites
+
+Alignment comprises 1 partitions and 6552 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+R4
+Alignment sites / patterns: 10722 / 6552
+Gaps: 6.31 %
+Invariant sites: 36.06 %
+
+
+NOTE: Binary MSA file created: MUSCLE.aln.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 4 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Loading user starting tree(s) from: resolved.tre
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1638 / 26208
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Evaluating 1 trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -306421.754965
+
+[00:00:00 -306421.754965] Initial branch length optimization
+[00:00:00 -305733.847325] Model parameter optimization (eps = 0.100000)
+
+[00:00:09] Tree #1, final logLikelihood: -276034.876017
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: FREE (4 cats, mean),  weights&rates: (0.411381,0.114039) (0.305277,0.603316) (0.197662,1.802430) (0.085680,4.816033) 
+   P-inv (ML): 0.299255
+   Base frequencies (ML): 0.200625 0.302626 0.277629 0.219121 
+   Substitution rates (ML): 2.008268 13.260547 2.710560 1.035853 15.684276 1.000000 
+
+
+Final LogLikelihood: -276034.876017
+
+AIC score: 552493.752033 / AICc score: 552502.345810 / BIC score: 554037.123266
+Free parameters (model + branch lengths): 212
+
+Best ML tree saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv1/MUSCLE/FastTree/RAxML/MUSCLE.aln.raxml.bestTree
+Optimized model saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv1/MUSCLE/FastTree/RAxML/MUSCLE.aln.raxml.bestModel
+
+Execution log saved to: /home/colin/Desktop/NiemaLab/SimulatedEvaluationFramework/hcvTrials/hcv1/MUSCLE/FastTree/RAxML/MUSCLE.aln.raxml.log
+
+Analysis started: 03-Nov-2020 15:52:53 / finished: 03-Nov-2020 15:53:02
+
+Elapsed time: 9.157 seconds
+
+Consumed energy: 0.165 Wh
+
