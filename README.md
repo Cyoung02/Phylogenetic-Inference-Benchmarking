@@ -61,15 +61,15 @@ Note: PhyML only takes sequences in PHYLIP format. A script has been included in
 
 ## Optimizing Branch Lengths along a Fixed Topology
 [IQ-TREE](https://github.com/Cibiv/IQ-TREE) was run as follows:  
-`iqtree -m GTR+I+R -s alignedSequences -nt AUTO -te fastTreeFile`
+`iqtree -m GTR+I+R -s alignedSequences -nt AUTO -te treeFile`
 
 [IQ-TREE](https://github.com/Cibiv/IQ-TREE) (MFP) was run as follows:  
-`iqtree -m MFP -s MAFFT.aln -nt AUTO -te fastTreeFile`
+`iqtree -m MFP -s MAFFT.aln -nt AUTO -te treeFile`
 
 [RAxML-NG](https://github.com/amkozlov/raxml-ng) was run as follows:  
-`raxml-ng --msa alignedSequences --model GTR+FO+I+R4 --evaluate --tree resolvedFastTreeFile`  
+`raxml-ng --msa alignedSequences --model GTR+FO+I+R4 --evaluate --tree resolvedTreeFile`  
 Note: RAxML only accepts trees which are strictly bifurcating. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which resolves polytomies.
 
 [PhyML](https://github.com/stephaneguindon/phyml) was run as follows:  
-`phyml -i alignedSequences -a e -d nt -m GTR -o lr -u resolvedFastTreeFile`  
+`phyml -i alignedSequences -a e -d nt -m GTR -o lr -u resolvedTreeFile`  
 Note: PhyML only accepts trees which are strictly bifurcating. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which resolves polytomies.
