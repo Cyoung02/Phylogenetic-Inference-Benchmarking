@@ -1,7 +1,7 @@
-# Phylogenetic-Inference-Benchmarking
+# Phylogenetic Inference Benchmarking
 This repository contains molecular epidemiological analyses of data simulated from real-world Ebolavirus, HIV, and HCV viral sequence data. 
 
-##Simulating Data
+## Simulating Data
 The Ebolavirus dataset obtained from the [Los Alamos National Laboratory (LANL) HFV Sequence Database](https://hfv.lanl.gov/content/sequence/NEWALIGN/align.html) as follows:
 
 * **Alignment type:** Whole set
@@ -32,7 +32,7 @@ The HIV-1 dataset obtained from the [Los Alamos National Laboratory (LANL) HIV S
 
 From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE) to infer a phylogeny under the General Time Reversible model of sequence evolution with invariable sites and gamma-distributed site-rate heterogeneity with 20 categories. From the IQ-TREE results, we obtained the phylogeny, the GTR substitution model parameters, the proportion of invariable sites, and the shape of the gamma distribution. The phylogeny was subsequently rooted using [FastRoot minimum variance rooting](https://github.com/uym2/MinVar-Rooting), and a tree with 100 leaves was subsampled from it. These parameters were then used to simulate sequence alignments from the subsample of the inferred phylogeny using [INDELible](https://github.com/kloetzl/indelible). 10 replicate datasets were generated for each virus.
 
-##Running Multiple Sequence Alignment
+## Running Multiple Sequence Alignment
 [Clustal Omega](http://www.clustal.org/omega/) was run as follows:
 `clustalo -v --auto -i unalignedSequences -o Clustal.aln`
 
@@ -42,7 +42,7 @@ From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE)
 [MAFFT](https://mafft.cbrc.jp/alignment/software/) was run as follows:
 `mafft --reorder --auto unaligedSequences > MAFFT.aln`
 
-##Running Phylogenetic Inference
+## Running Phylogenetic Inference
 [FastTree](http://microbesonline.org/fasttree/) was run as follows:
 `cat alignedSequences | FastTree -gamma -nt -gtr -out fast.tre`
 
@@ -59,7 +59,7 @@ IQ-Tree with ModelFinder Plus was run as follows:
 `phyml -i alignedSequences -a e -d nt -m GTR`
 Note: PhyML only takes sequences in PHYLIP format. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which converts FASTA to PHYLIP.
 
-##Optimizing Branch Lengths along FastTree Topology
+## Optimizing Branch Lengths along FastTree Topology
 [IQ-TREE](https://github.com/Cibiv/IQ-TREE) was run as follows:
 `iqtree -m GTR+I+R -s alignedSequences -nt AUTO -te fastTreeFile`
 
