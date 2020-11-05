@@ -1,5 +1,5 @@
 # Phylogenetic Inference Benchmarking
-This repository contains molecular epidemiological analyses of data simulated from real-world Ebolavirus, HIV, and HCV viral sequence data. 
+This repository contains molecular epidemiological analyses of data simulated from real-world Ebolavirus, HIV, and HCV viral sequence data. The repository is structured so that each step in a molecular epidemiology workflow is represented with a single directory. For example, a workflow performed on the 4th replicate dataset of HIV which aligns sequences using MAFFT, infers a phylogeny with FastTree, and optimizes the FastTree topology with RAxML would be in [HIV](HIV)/[HIV4]()/[MAFFT]()/[FastTree]()/[RAxML]()
 
 ## Data Acquisition and Simulation
 The Ebolavirus dataset obtained from the [Los Alamos National Laboratory (LANL) HFV Sequence Database](https://hfv.lanl.gov/content/sequence/NEWALIGN/align.html) as follows:
