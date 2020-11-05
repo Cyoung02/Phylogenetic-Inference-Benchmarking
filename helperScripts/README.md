@@ -1,6 +1,7 @@
-Collection of command-line tools used in our benchmarking of phylogenetic-inference tools. 
+# Helper Scripts
+Collection of command-line tools used in our benchmarking of phylogenetic inference tools. 
 
-### [errorSq.py](): Compute the mean square error between two tn93-format distance files
+### [errorSq.py](errorSq.py): Compute the mean square error between two tn93-format distance files
 * For help message: `python errorSq.py -h`
 
 ### [fasta2phylip.py](): Convert a FASTA multiple sequence alignment to PHYLIP
