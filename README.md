@@ -1,4 +1,4 @@
-#Phylogenetic-Inference-Benchmarking
+# Phylogenetic-Inference-Benchmarking
 This repository contains molecular epidemiological analyses of data simulated from real-world Ebolavirus, HIV, and HCV viral sequence data. 
 
 ##Simulating Data
