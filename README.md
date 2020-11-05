@@ -43,33 +43,33 @@ From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE)
 `mafft --reorder --auto unaligedSequences > MAFFT.aln`
 
 ## Running Phylogenetic Inference
-[FastTree](http://microbesonline.org/fasttree/) was run as follows:
+[FastTree](http://microbesonline.org/fasttree/) was run as follows:  
 `cat alignedSequences | FastTree -gamma -nt -gtr -out fast.tre`
 
 [IQ-TREE](https://github.com/Cibiv/IQ-TREE) was run as follows:
 `iqtree -m GTR+I+R -s alignedSequences -nt AUTO`
 
-IQ-Tree with ModelFinder Plus was run as follows:
+IQ-TREE (MFP) was run as follows:
 `iqtree -m MFP -s alignedSequences -nt AUTO`
 
 [RAxML-NG](https://github.com/amkozlov/raxml-ng) was run as follows:
 `raxml-ng --msa alignedSequences --model GTR+FO+I+R4`
 
 [PhyML](https://github.com/stephaneguindon/phyml) was run as follows:
-`phyml -i alignedSequences -a e -d nt -m GTR`
+`phyml -i alignedSequences -a e -d nt -m GTR`  
 Note: PhyML only takes sequences in PHYLIP format. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which converts FASTA to PHYLIP.
 
 ## Optimizing Branch Lengths along FastTree Topology
 [IQ-TREE](https://github.com/Cibiv/IQ-TREE) was run as follows:
 `iqtree -m GTR+I+R -s alignedSequences -nt AUTO -te fastTreeFile`
 
-IQ-Tree with ModelFinder Plus was run as follows:
+IQ-TREE (MFP) was run as follows:
 `iqtree -m MFP -s MAFFT.aln -nt AUTO -te fastTreeFile`
 
 [RAxML-NG](https://github.com/amkozlov/raxml-ng) was run as follows:
-`raxml-ng --msa alignedSequences --model GTR+FO+I+R4 --evaluate --tree resolvedFastTreeFile`
+`raxml-ng --msa alignedSequences --model GTR+FO+I+R4 --evaluate --tree resolvedFastTreeFile`  
 Note: RAxML only accepts trees which are strictly bifurcating. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which resolves polytomies.
 
 [PhyML](https://github.com/stephaneguindon/phyml) was run as follows:
-`phyml -i alignedSequences -a e -d nt -m GTR -o lr -u resolvedFastTreeFile`
+`phyml -i alignedSequences -a e -d nt -m GTR -o lr -u resolvedFastTreeFile`  
 Note: PhyML only accepts trees which are strictly bifurcating. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which resolves polytomies.
