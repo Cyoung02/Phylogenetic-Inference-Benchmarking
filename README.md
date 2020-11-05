@@ -1,5 +1,5 @@
 # Phylogenetic Inference Benchmarking
-This repository contains molecular epidemiological analyses of data simulated from real-world Ebolavirus, HIV, and HCV viral sequence data. The repository is structured so that each step in a molecular epidemiology workflow is represented with a single directory. For example, a workflow performed on the 4th replicate dataset of HIV which aligns sequences using MAFFT, infers a phylogeny with FastTree, and optimizes the FastTree topology with RAxML would be in [HIV](HIV)/[HIV4]()/[MAFFT]()/[FastTree]()/[RAxML]()
+This repository contains molecular epidemiological analyses of data simulated from real-world Ebolavirus, HIV, and HCV viral sequence data. The repository is structured such that all analyses downstream of a step in the workflow are within that step's directory. For example, a workflow performed on the 4th replicate dataset of HIV which aligns sequences using MAFFT, infers a phylogeny with FastTree, and optimizes the FastTree topology with RAxML would be in [HIV](HIV)/[HIV4](HIV/HIV4)/[MAFFT](HIV/HIV4/MAFFT)/[FastTree](HIV/HIV4/FastTree)/[RAxML](HIV/HIV4/FastTree/RAxML).
 
 ## Data Acquisition and Simulation
 The Ebolavirus dataset obtained from the [Los Alamos National Laboratory (LANL) HFV Sequence Database](https://hfv.lanl.gov/content/sequence/NEWALIGN/align.html) as follows:
@@ -59,7 +59,7 @@ From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE)
 `phyml -i alignedSequences -a e -d nt -m GTR`  
 Note: PhyML only takes sequences in PHYLIP format. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which converts FASTA to PHYLIP.
 
-## Optimizing Branch Lengths along FastTree Topology
+## Optimizing Branch Lengths along a Fixed Topology
 [IQ-TREE](https://github.com/Cibiv/IQ-TREE) was run as follows:  
 `iqtree -m GTR+I+R -s alignedSequences -nt AUTO -te fastTreeFile`
 
