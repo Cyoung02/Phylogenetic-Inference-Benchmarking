@@ -30,7 +30,7 @@ The HIV-1 dataset obtained from the [Los Alamos National Laboratory (LANL) HIV S
 * **Subtype:** All
 * **Number of sequences:** 4004
 
-From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE) to infer a phylogeny under the General Time Reversible model of sequence evolution with invariable sites and gamma-distributed site-rate heterogeneity with 20 categories. From the IQ-TREE results, we obtained the phylogeny, the GTR substitution model parameters, the proportion of invariable sites, and the shape of the gamma distribution. The phylogeny was subsequently rooted using [FastRoot](https://github.com/uym2/MinVar-Rooting) minimum variance rooting, and a tree with 100 leaves was subsampled from it. These parameters were then used to simulate sequence alignments from the subsample of the inferred phylogeny using [INDELible](https://github.com/kloetzl/indelible). 10 replicate datasets were generated for each virus.
+From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE) to infer a phylogeny under the General Time Reversible model of sequence evolution with invariable sites and gamma-distributed site-rate heterogeneity with 20 categories. From the IQ-TREE results, we obtained the phylogeny, the GTR substitution model parameters, the proportion of invariable sites, and the shape of the gamma distribution. The phylogeny was subsequently rooted using [FastRoot](https://github.com/uym2/MinVar-Rooting) minimum variance rooting, and a tree with 100 leaves was subsampled from it. These parameters were then used to simulate sequence alignments from the subsample of the inferred phylogeny using [INDELible](http://abacus.gene.ucl.ac.uk/software/indelible/). 10 replicate datasets were generated for each virus.
 
 ## Running Multiple Sequence Alignment
 [Clustal Omega](http://www.clustal.org/omega/) was run as follows:  
@@ -46,10 +46,10 @@ From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE)
 [FastTree](http://microbesonline.org/fasttree/) was run as follows:  
 `cat alignedSequences | FastTree -gamma -nt -gtr -out fast.tre`
 
-[IQ-TREE](https://github.com/Cibiv/IQ-TREE) was run as follows:  
+[IQ-TREE](http://www.iqtree.org/) was run as follows:  
 `iqtree -m GTR+I+R -s alignedSequences -nt AUTO`
 
-[IQ-TREE](https://github.com/Cibiv/IQ-TREE) (MFP) was run as follows:  
+[IQ-TREE](http://www.iqtree.org/) (MFP) was run as follows:  
 `iqtree -m MFP -s alignedSequences -nt AUTO`
 
 [RAxML-NG](https://github.com/amkozlov/raxml-ng) was run as follows:  
@@ -60,10 +60,10 @@ From each curated alignment, we used [IQ-TREE](https://github.com/Cibiv/IQ-TREE)
 Note: PhyML only takes sequences in PHYLIP format. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which converts FASTA to PHYLIP.
 
 ## Optimizing Branch Lengths along a Fixed Topology
-[IQ-TREE](https://github.com/Cibiv/IQ-TREE) was run as follows:  
+[IQ-TREE](http://www.iqtree.org/) was run as follows:  
 `iqtree -m GTR+I+R -s alignedSequences -nt AUTO -te treeFile`
 
-[IQ-TREE](https://github.com/Cibiv/IQ-TREE) (MFP) was run as follows:  
+[IQ-TREE](http://www.iqtree.org/) (MFP) was run as follows:  
 `iqtree -m MFP -s MAFFT.aln -nt AUTO -te treeFile`
 
 [RAxML-NG](https://github.com/amkozlov/raxml-ng) was run as follows:  
