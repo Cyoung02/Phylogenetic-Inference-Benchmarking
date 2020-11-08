@@ -79,19 +79,19 @@ SP Score, TC Score, and Compression Factor were computed with [FastSP](https://g
 `java -jar FastSP.jar -r trueAlignedSequences -e inferredAlignedSequences`
 
 Patristic distances were parsed from phylogenies using [patristic_distances.py](helperScripts/patristic_distances.py) as follows:  
-`./patristic_distances.py -i phylogeny -o patristicDistances`  
+`./patristic_distances.py -i phylogeny -o distances`  
 
-Patristic distances were parsed from multiple sequence alignments using [tn93](https://github.com/veg/tn93) as follows:  
-`cat alignedSequences | tn93 -l 1 -t 1 > patristicDistances`
+Tamura-Nei pairwise genetic distances were parsed from multiple sequence alignments using [tn93](https://github.com/veg/tn93) as follows:  
+`cat alignedSequences | tn93 -l 1 -t 1 > distances`
 
 Error Squared was computed with [errorSq.py](helperScripts/errorSq.py) as follows:  
-`./errorSq.py -d1 patristicDistances1 -d2 patristicDistances2`
+`./errorSq.py -d1 distances1 -d2 distances2`
 
 Pearson Mantel Correlations were computed with [mantel.py](helperScripts/mantel.py) as follows:  
-`./mantel.py -d1 patristicDistances1 -d2 patristicDistances2 --correlation pearson`
+`./mantel.py -d1 distances1 -d2 distances2 --correlation pearson`
 
 Spearman Mantel Correlations were computed with [mantel.py](helperScripts/mantel.py) as follows:  
-`./mantel.py -d1 patristicDistances1 -d2 patristicDistances2 --correlation spearman`
+`./mantel.py -d1 distances1 -d2 distances2 --correlation spearman`
 
 Normalized Unweighted Robinson Foulds Distances were computed with [nw_error.py](helperScripts/nw_error.py) as follows:  
 `./nw_error.py -t1 truePhylogeny -t2 inferredPhylogeny --metric URF --normalize`
