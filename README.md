@@ -76,7 +76,7 @@ Note: PhyML only accepts trees which are strictly bifurcating. A script has been
 
 ## Taking Measurements
 SP Score, TC Score, and Compression Factor were computed with [FastSP](https://github.com/smirarab/FastSP) as follows:
-`java -jar FastSP.jar -r reference_alignment_file -e estimated_alignment_file`
+`java -jar FastSP.jar -r trueAlignedSequences -e inferredAlignedSequences`
 
 Patristic distances were parsed from phylogenies using [patristic_distances.py](helperScripts/patristic_distances.py) as follows:  
 `./patristic_distances.py -i phylogeny -o patristicDistances`  
@@ -84,19 +84,19 @@ Patristic distances were parsed from phylogenies using [patristic_distances.py](
 Patristic distances were parsed from multiple sequence alignments using [tn93](https://github.com/veg/tn93) as follows:  
 `cat alignedSequences | tn93 -l 1 -t 1 > patristicDistances`
 
-The Error Squared was computed with [errorSq.py](helperScripts/errorSq.py) as follows:  
+Error Squared was computed with [errorSq.py](helperScripts/errorSq.py) as follows:  
 `./errorSq.py -d1 patristicDistances1 -d2 patristicDistances2`
 
-The Pearson Mantel Correlation was computed with [mantel.py](helperScripts/mantel.py) as follows:  
+Pearson Mantel Correlations were computed with [mantel.py](helperScripts/mantel.py) as follows:  
 `./mantel.py -d1 patristicDistances1 -d2 patristicDistances2 --correlation pearson`
 
-The Spearman Mantel Correlation was computed with [mantel.py](helperScripts/mantel.py) as follows:  
+Spearman Mantel Correlations were computed with [mantel.py](helperScripts/mantel.py) as follows:  
 `./mantel.py -d1 patristicDistances1 -d2 patristicDistances2 --correlation spearman`
 
-The normalized unweighted Robinson Foulds Distance was computed with [nw_error.py](helperScripts/nw_error.py) as follows:  
+Normalized Unweighted Robinson Foulds Distances were computed with [nw_error.py](helperScripts/nw_error.py) as follows:  
 `./nw_error.py -t1 truePhylogeny -t2 inferredPhylogeny --metric URF --normalize`
 
-The weighted Robinson Foulds Distance was computed with [nw_error.py](helperScripts/nw_error.py) as follows:  
+Weighted Robinson Foulds Distances were computed with [nw_error.py](helperScripts/nw_error.py) as follows:  
 `./nw_error.py -t1 truePhylogeny -t2 inferredPhylogeny --metric WRF`
 
 
