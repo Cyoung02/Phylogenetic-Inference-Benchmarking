@@ -68,11 +68,11 @@ Note: PhyML only takes sequences in PHYLIP format. A script has been included in
 
 [RAxML-NG](https://github.com/amkozlov/raxml-ng) was run as follows:  
 `raxml-ng --msa alignedSequences --model GTR+FO+I+R4 --evaluate --tree resolvedTreeFile`  
-Note: RAxML only accepts trees which are strictly bifurcating. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which resolves polytomies.
+Note: RAxML only accepts trees which are strictly bifurcating. A [script](helperScripts/resolve_random.py) has been included in helperScripts which resolves polytomies.
 
 [PhyML](https://github.com/stephaneguindon/phyml) was run as follows:  
 `phyml -i alignedSequences -a e -d nt -m GTR -o lr -u resolvedTreeFile`  
-Note: PhyML only accepts trees which are strictly bifurcating. A script has been included in [helperScripts](https://github.com/Cyoung02/SimulatedEvaluationFramework/tree/master/helperScripts) which resolves polytomies.
+Note: PhyML only accepts trees which are strictly bifurcating. A [script](helperScripts/resolve_random.py) has been included in helperScripts which resolves polytomies.
 
 ## Taking Measurements
 SP Score, TC Score, and Compression Factor were computed with [FastSP](https://github.com/smirarab/FastSP) as follows:

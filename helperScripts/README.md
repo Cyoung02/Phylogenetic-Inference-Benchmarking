@@ -21,3 +21,8 @@ Collection of command-line tools used in our benchmarking of phylogenetic infere
 
 ### [phylip2fasta.py](phylip2fasta.py): Convert a PHYLIP multiple sequence alignment to FASTA
 * For help message: `python phylip2fasta.py -h`
+
+### [resolve_random.py](resolve_random.py): Randomly resolve a multifurcating tree
+* Reads multifurcating tree from STDIN and writes resolved tree to STDOUT
+* Usage: `resolve_random.R < UNRESOLVED.tre > RESOLVED.tre`
+* Taken from https://github.com/niemasd/tools
