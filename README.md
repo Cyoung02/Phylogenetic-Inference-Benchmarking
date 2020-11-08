@@ -72,7 +72,7 @@ Note: RAxML only accepts trees which are strictly bifurcating. A [script](helper
 
 [PhyML](https://github.com/stephaneguindon/phyml) was run as follows:  
 `phyml -i alignedSequences -a e -d nt -m GTR -o lr -u resolvedTreeFile`  
-Note: PhyML only accepts trees which are strictly bifurcating. A [script](helperScripts/resolve_random.py) has been included in [helperScripts](helperScripts )which resolves polytomies.
+Note: PhyML only accepts trees which are strictly bifurcating. A [script](helperScripts/resolve_random.py) has been included in [helperScripts](helperScripts) which resolves polytomies.
 
 ## Taking Measurements
 SP Score, TC Score, and Compression Factor were computed with [FastSP](https://github.com/smirarab/FastSP) as follows:
